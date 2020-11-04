@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-5KPPTMH');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="https://images.squarespace-cdn.com/content/v1/5e72bcc24df07c684ef0bd2e/1585702216543-JWS7N3DGUTBIHPIW3OH0/ke17ZwdGBToddI8pDm48kOtkkuh7WkyKPLwHlCh8Pyd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmB0W9vbFHp6FP3rEjKCqB1gW_lr3ZbeWpZkZRbhiZJtev3bShlv2z6dP-DoLBze55/favicon.ico?format=100w"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Loan eligibility assistant" />
+    <meta property="og:title" content="COVID-19 SMB Loan Information" />
+    <meta
+      property="og:description"
+      content="Learn about support programs available to help stabilize your business."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@USDResponse" />
+    <meta name="twitter:title" content="COVID-19 SMB Loan Information" />
+    <meta
+      name="twitter:description"
+      content="Learn about support programs available to help stabilize your business."
+    />
+    <!-- <meta name="twitter:image" content="https://"> -->
+    <meta name="twitter:creator" content="@USDResponse" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-163832126-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+    </script>
+    <link
+      rel="apple-touch-icon"
+      href="https://images.squarespace-cdn.com/content/v1/5e72bcc24df07c684ef0bd2e/1585702216543-JWS7N3DGUTBIHPIW3OH0/ke17ZwdGBToddI8pDm48kOtkkuh7WkyKPLwHlCh8Pyd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmB0W9vbFHp6FP3rEjKCqB1gW_lr3ZbeWpZkZRbhiZJtev3bShlv2z6dP-DoLBze55/favicon.ico?format=100w"
+    />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>COVID Business Assist</title>
+    <meta
+      name="Description"
+      content="Learn about support programs available to help stabilize your business."
+    />
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/27d11a5149.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5KPPTMH"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <script src="/jquery-3.4.1.slim.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
+    <script src="/sba/questions.js"></script>
+    <script src="/sba/requirements.js"></script>
+    <script src="/formflow.js?v=7"></script>
+  </body>
+</html>

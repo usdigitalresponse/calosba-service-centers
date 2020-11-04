@@ -1,0 +1,35 @@
+.back-button-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  padding: 0px;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .form-container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+}
+
+#question-text {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+#question-text2 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 100;
+}

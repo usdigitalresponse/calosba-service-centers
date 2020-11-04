@@ -1,0 +1,38 @@
+footer {
+  background-color: #E1F3F8;
+  padding-top: 60px;
+  flex: 0;
+  min-height: 200px;
+  // bottom: 0;
+  width: 100vw;
+  // align-self: flex-end;
+
+  .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    p {
+      padding-right: 3rem;
+    }
+
+    div, a {
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  a,
+  a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+
+  img {
+    width: 24px;
+    margin-right: 0.5rem;
+  }
+
+  .row + .row {
+    margin-top: 1rem;
+  }
+}

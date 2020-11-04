@@ -1,0 +1,245 @@
+@import 'https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap';
+
+.results-page {
+  margin-top: 3em;
+  background-color: white;
+  .container-fluid {
+    background-color: #fff;
+    max-width: 1140px;
+  }
+  margin: 15px;
+}
+
+.container {
+    max-width: 910px;
+  }
+
+p {
+  font-size: 18px;
+}
+
+.left {
+  padding-right: 6em;
+}
+
+.sidebar-container {
+  border: 0.5px solid #efefef;
+  width: auto;
+  padding: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+  // max-width: 284px;
+}
+
+.sidebar-title {
+  font-size: 12px;
+  line-height: 12px;
+  color: #595959;
+  font-size: bold;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.sidebar-item {
+  border-bottom: 0.5px solid #efefef;
+  padding: 15px 0px 15px 0px;
+  width: auto;
+  font-size: 18px;
+  line-height: 26px;
+  color: #0872b9;
+  font-style: underline;
+  text-decoration: underline;
+}
+
+.sidebar-item:last-child {
+  border-bottom: none
+}
+
+.sidebar-expired {
+  border-top: 0.5px solid #efefef;
+  padding-top: 16px;
+}
+
+.ppp-item {
+  font-size: 18px;
+  line-height: 27px;
+  color: #0872b9;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-decoration: underline;
+}
+
+.ppp-cta {
+  font-size: 18px;
+  line-height: 26px;
+  color: #0872b9;
+  font-style: underline;
+  text-decoration: underline;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #171617;
+  font-family: 'Public Sans', sans-serif;
+  padding-right: 106px;
+  margin: 0px;
+}
+
+.title-top {
+  font-size: 40px;
+  color: #171617;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 0px;
+}
+
+.loan-container {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  border-bottom: #f2f2f2 solid 3px;
+}
+
+.loan-container-last {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.ppp-lenders-container {
+  padding-left: 20px;
+  border-left: #f2f2f2 solid 5px;
+}
+
+.top-label {
+  font-size: 16px;
+  line-height: 26px;
+  color:#4A4A4A;
+}
+
+.eidl-terms {
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.expired-container {
+  margin-top: 4em;
+  padding-top: 4em;
+  margin-bottom: 5em;
+}
+
+.loan-description {
+  margin-top: 16px;
+}
+
+.ppp-subtext {
+  font-size: 16px;
+  color:#4A4A4A;
+  padding-left: 10px;
+  margin-top: -8px;
+  margin-bottom: 16px;
+}
+
+.language-option {
+  padding-right: 1em;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.mobile-container {
+  padding: 15px;
+}
+
+#mobile-tabsbar-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-top: 30px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.tabsbar {
+  height: 40px;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.tab-item {
+  padding-right: 1.5em;
+  border-bottom: #f2f2f2 solid 3px;
+  padding-bottom: 15px;
+}
+
+.tab-item .current {
+  border-bottom: black solid 3px;
+  padding-bottom: 15px;
+}
+
+.tab-link {
+  color: black;
+}
+
+.tab-link .current {
+  font-weight: 700px;
+  color: red;
+}
+
+#mapid { 
+  height: 500px; 
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    padding-right: 15px;
+  }
+
+  .sidebar-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tabsbar-container {
+    display: none;
+  }
+}
+
+
+
+// @media (max-width: 1000px) {
+//   .container-fluid {
+//     width: 90%;
+//   }
+//   input {
+//     max-width: 100%;
+//     margin: 0;
+//   }
+//   .header {
+//     padding: 20px;
+//   }
+//   .header img {
+//     margin: 0;
+//   }
+//   .header a {
+//     display: none;
+//   }
+// }

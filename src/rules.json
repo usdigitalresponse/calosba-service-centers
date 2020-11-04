@@ -1,0 +1,295 @@
+[
+  {
+    "program": "eidl",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "located_in_us",
+        "value": "true"
+      },
+      {
+        "op": "le",
+        "qid": "business_age",
+        "value": "2020-01-31"
+      },
+      {
+        "op": "eq",
+        "qid": "employee_count",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "is_illegal",
+        "value": "true"
+      }
+    ]
+  },
+  {
+    "program": "ppp",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "located_in_us",
+        "value": "true"
+      },
+      {
+        "op": "le",
+        "qid": "business_age",
+        "value": "2020-02-15"
+      },
+      {
+        "op": "eq",
+        "qid": "employee_count",
+        "value": "true"
+      }
+    ]
+  },
+  {
+    "program": "sba_debt",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "located_in_us",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "has_other_sba_loans",
+        "value": "true"
+      }
+    ]
+  },
+  {
+    "program": "ca_small_biz",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "ca_legal_business",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "ca_employees",
+        "value": "true"
+      }
+    ]
+  },
+
+  {
+    "program": "ca_services_la_verne",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "ca_services_languages",
+        "value": "language_english"
+      }
+    ]
+  },
+  {
+    "program": "ca_services_el_camino_college",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "ca_services_languages",
+        "value": "language_english"
+      },
+      {
+        "op": "eq",
+        "qid": "ca_services_languages",
+        "value": "language_spanish"
+      }
+    ]
+  },
+  {
+    "program": "ca_services_san_diego_orange_and_imperial",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "ca_services_languages",
+        "value": "language_english"
+      }
+    ]
+  },
+  {
+    "program": "ca_services_la_regional_small_biz_development_center",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "ca_services_languages",
+        "value": "language_english"
+      }
+    ]
+  },
+
+
+  {
+    "program": "pitt_elf",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "pitt_city_location",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "pitt_employees",
+        "value": "true"
+      },
+      {
+        "op": "le",
+        "qid": "business_age",
+        "value": "2019-09-01"
+      }
+    ]
+  },
+  {
+    "program": "pitt_ura",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "pitt_city_location",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "pitt_employees",
+        "value": "true"
+      },
+      {
+        "op": "le",
+        "qid": "business_age",
+        "value": "2019-09-01"
+      }
+    ]
+  },
+  {
+    "program": "pitt_bridgeway",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "pa_state",
+        "value": "true"
+      },
+      {
+        "op": "le",
+        "qid": "business_age",
+        "value": "2020-01-01"
+      }
+    ]
+  },
+  {
+    "program": "pitt_kiva",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "pa_state",
+        "value": "true"
+      },
+      {
+        "op": "le",
+        "qid": "business_age",
+        "value": "2020-01-01"
+      }
+    ]
+  },
+  {
+    "program": "pitt_honeycomb",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "pa_state",
+        "value": "true"
+      },
+      {
+        "op": "le",
+        "qid": "business_age",
+        "value": "2020-01-01"
+      }
+    ]
+  },
+  {
+    "program": "hawaii_community",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "hawaii_business",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "hawaii_turned_down",
+        "value": "true"
+      }
+    ]
+  },
+  {
+    "program": "hawaii_small_business",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "hawaii_business",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "hawaii_revenue",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "hawaii_employees",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "honolulu_location",
+        "value": "true"
+      }
+    ]
+  },
+  {
+    "program": "hawaii_manufacturing",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "hawaii_business",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "hawaii_manufacturing",
+        "value": "true"
+      }
+    ]
+  },
+  {
+    "program": "hawaii_malama",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "hawaii_business",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "hawaii_native",
+        "value": "true"
+      }
+    ]
+  },
+  {
+    "program": "hawaii_hua",
+    "rules": [
+      {
+        "op": "eq",
+        "qid": "hawaii_business",
+        "value": "true"
+      },
+      {
+        "op": "eq",
+        "qid": "hawaii_native",
+        "value": "true"
+      }
+    ]
+  }
+]
