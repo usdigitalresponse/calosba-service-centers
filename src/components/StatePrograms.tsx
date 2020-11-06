@@ -10,20 +10,28 @@ const StatePrograms: React.FC = (props) => {
     return (
       <div id={program.id} className={i === props.eligibleStatePrograms.length - 1 ? "loan-container-last" : "loan-container"}>
         <a name={program.id}></a>
-        <label className="top-label">
-          {program.status}
-        </label>
+        {/* <label className="top-label">
+          {program.address}
+        </label> */}
         <h2 className="title">
           {program.name}
         </h2>
         <p className="loan-description">
-          <strong>What is it?</strong>
+          <strong>Address: </strong><span>{program.address}</span>
+        </p>
+        <p>
+        </p>
+        <p className="loan-description">
+          <strong>Languages</strong>
+        </p>
+        <p>
+          {program.languages}
+        </p>
+        <p className="loan-description">
+          <strong>Services Offered</strong>
         </p>
         <p>
           {program.what}
-        </p>
-        <p className="loan-description">
-          <strong>Who is it for?</strong>
         </p>
         <a
           className="usa-button"
@@ -35,7 +43,7 @@ const StatePrograms: React.FC = (props) => {
           type="button"
           href="#"
         >
-          Apply Now
+          Learn More
         </a>
       </div>
     )

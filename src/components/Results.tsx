@@ -34,11 +34,12 @@ const Results: React.FC = () => {
   }
 
   const renderLeafletMap = () => {
-    var map = L.map('mapid').setView([36.7, -119], 6);
+    var map = L.map('mapid').setView([36.7, -119], 7);
 
     L.marker([36.7, -119]).addTo(map)
-    L.marker([37, -120]).addTo(map)
-    L.marker([38, -121]).addTo(map)
+    L.marker([36.3, -119.2]).addTo(map)
+    L.marker([37.5, -119.2]).addTo(map)
+    L.marker([37, -118.9]).addTo(map)
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
@@ -56,8 +57,10 @@ const Results: React.FC = () => {
     form: { results },
   } = useForm();
 
+  const useDevData = true;
+
   // hacky port of raw js from previous results page, will redo with the new results page
-  const eligibleProgramIds = new URLSearchParams(search).getAll("eligible")
+  const eligibleProgramIds = useDevData ? allCenters :new URLSearchParams(search).getAll("eligible")
   const filteredCenters = results.filter(center => (eligibleProgramIds.includes(center.id) && allCenters.includes(center.id)))
   
   return (

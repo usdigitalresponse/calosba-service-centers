@@ -50,7 +50,7 @@ const Landing: React.FC<Props> = (props) => {
           content="Learn about support programs available to help stabilize your business."
         />
       </Helmet>
-      <Header/>
+      <Header showLanguageSelect/>
       <div className="container humans-image">
         <img
           src="/smb_humans.svg"
@@ -62,9 +62,9 @@ const Landing: React.FC<Props> = (props) => {
           <div className="row">
             <div className="col-md-6">
               <div>
-                <h1>[CA-SERVICES] Find COVID-19 financial assistance for your business</h1>
+                <h1>Find technical assistance for your business</h1>
                 <p>
-                  Answer a few questions to find loans, funding alternatives, and support.
+                California supports a network of small business technical assistance centers that provide free one-on-one consulting and no-cost or low-cost trainings to help businesses get funded, enter new markets, strengthen operations, build resiliency and more. Additionally, there are nonprofit lenders who work with California to help you access state loan programs. With over 30 languages available, use this map to find your local center today or answer a few questions to find tailored services Interactive map. 
                 </p>
                   <Link 
                     to="/questions"
@@ -75,8 +75,8 @@ const Landing: React.FC<Props> = (props) => {
                   </Link>
 
               </div>
-              <section>
-                {/* <h2>Who is it for?</h2> */}
+              {/* <section>
+                <h2>Who is it for?</h2>
                 <p>This free tool is for U.S.-based businesses including:</p>
                 <ul>
                   <li>Non-profits</li>
@@ -87,8 +87,8 @@ const Landing: React.FC<Props> = (props) => {
                 </ul>
                 <p>If you have more than 500 employees, check the <a className="link-in-text" href = "https://www.sba.gov/document/support--table-size-standards" target="_blank">
                   Small Business Administration size standards </a> to find loans specific to your industry.</p>
-              </section>
-              {/* <section id="government-partners">
+              </section> */}
+              <section id="government-partners">
                 <h2>Government partners</h2>
                 <p>
                   To get a free tool built for your agency or to include your state's programs, please email the {" "}
@@ -100,7 +100,7 @@ const Landing: React.FC<Props> = (props) => {
                   </a>
                   .
                 </p>
-              </section> */}
+              </section>
             </div>
             <div className="col-md-6 d-none d-md-block">
               <img
