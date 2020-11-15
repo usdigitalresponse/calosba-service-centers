@@ -102,9 +102,10 @@ p {
   border-bottom: #f2f2f2 solid 3px;
 }
 
-.loan-container-last {
+.loan-container:last-child  {
   padding-top: 4em;
   padding-bottom: 4em;
+  border-bottom: 0;
 }
 
 .text {

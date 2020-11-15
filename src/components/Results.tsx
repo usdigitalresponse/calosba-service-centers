@@ -2,9 +2,7 @@
 
 import React, { useEffect , useState} from "react";
 import { useLocation, useHistory } from "react-router-dom";
-import PPPSection from './PayrollProtectionProgramSection'
-import EIDLProgramSection from './EconomicInjuryDisasterLoanProgramSection'
-import StatePrograms from './StatePrograms'
+import ResultsList from './ResultsList'
 import Header from "./Header";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
@@ -94,8 +92,8 @@ const Results: React.FC = () => {
                 />
             </div>
             <div id="mapid"></div>
-            <StatePrograms
-              eligibleStatePrograms={filteredCenters}
+            <ResultsList
+              results={filteredCenters}
             />
           </div>
           <div className="col-md-4">

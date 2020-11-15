@@ -3,8 +3,6 @@
 
 const { questions, language_defaults } = require("./docs/sba/questions");
 
-
-
 let qCodes = Object.keys(questions),
     languages = Object.keys(language_defaults),
     uniqueNames = [],

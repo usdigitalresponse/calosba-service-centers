@@ -8,16 +8,7 @@ import Footer from "./Footer";
 import "./footer.scss";
 import "./index.scss";
 
-interface Props {
-  ca?: boolean
-  ca_services?: boolean
-  pitt?: boolean
-  hawaii?:boolean;
-}
-
-const Landing: React.FC<Props> = (props) => {
-  const { ca, ca_services, pitt, hawaii } = props;
-
+const Landing: React.FC = () => {
   const [windowWidth, setWindowWidth] = useState(1000);
 
   const updateDimensions = () => {
