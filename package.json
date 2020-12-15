@@ -12,7 +12,7 @@
     "classnames": "^2.2.6",
     "csv": "^5.3.2",
     "express": "^4.17.1",
-    "grommet": "^2.15.0",
+    "grommet": "^2.15.2",
     "node-sass": "^4.13.1",
     "polished": "^3.5.1",
     "react": "^16.13.1",
