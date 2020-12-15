@@ -3963,10 +3963,10 @@ autoprefixer@^9.6.1:
     postcss "^7.0.32"
     postcss-value-parser "^4.1.0"
 
-aws-amplify-react@^4.1.6:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/aws-amplify-react/-/aws-amplify-react-4.2.2.tgz#029322fe0b7ed608f9e48c14142364c1a70e2e3d"
-  integrity sha512-pwJ5jOgWT6Oh43iKY4UrpngSDX6m3hSW7jCIWo7KxXasGzzEcyfzQwlupp6WnM8Q1YVR1oRUWCONXjdgVSjreg==
+aws-amplify-react@^4.2.14:
+  version "4.2.16"
+  resolved "https://registry.yarnpkg.com/aws-amplify-react/-/aws-amplify-react-4.2.16.tgz#387daa7a40bb3b9014cd6ddc0689a69d87a9fa00"
+  integrity sha512-m1Oa19bc+OpVKmc9+pKZfCDKz7gb0X6gIj3l1zvtmsmvkX8neb1yH7eO0BeCh0ZCwlnJ5Zn5d++U6HGfJe80+A==
   dependencies:
     qrcode.react "^0.8.0"
     regenerator-runtime "^0.11.1"
