@@ -9,7 +9,7 @@ const Tabsbar: React.FC = (props) => {
   return (
     <nav id="mobile-tabsbar-container">
       <div className="tabsbar">
-        {props.eligiblePrograms.map(program => {
+        {props.results.map(program => {
           return program.id === activeTab ? 
             (
               <span className="tab-item current">

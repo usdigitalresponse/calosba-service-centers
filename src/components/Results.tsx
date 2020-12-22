@@ -14,8 +14,8 @@ import "./results.scss";
 import "./index.scss";
 
 const allCenters = [
-  'ca_services_la_verne',
-  'ca_services_el_camino_college',
+  'Access Plus Capital',
+  'Agriculture & Land-Based Training Association (ALBA)',
   'ca_services_san_diego_orange_and_imperial',
   'ca_services_la_regional_small_biz_development_center'
 ]
@@ -58,8 +58,8 @@ const Results: React.FC = () => {
   const useDevData = true;
 
   // hacky port of raw js from previous results page, will redo with the new results page
-  const eligibleProgramIds = useDevData ? allCenters :new URLSearchParams(search).getAll("eligible")
-  const filteredCenters = results.filter(center => (eligibleProgramIds.includes(center.id) && allCenters.includes(center.id)))
+  const eligibleResultIds = useDevData ? allCenters : URLSearchParams(search).getAll("eligible")
+  const filteredCenters = results.filter(center => (eligibleResultIds.includes(center.id) && allCenters.includes(center.id)))
   
   return (
     <div className="content-page">
@@ -81,14 +81,14 @@ const Results: React.FC = () => {
         <div className="row">
           <div className="col-md-8 left">
             <h1 className="title-top">
-              {results.find(result => result.id === "page-title").recommendations}
+              Calosba Centers near you
             </h1>
             <p>
-              {results.find(result => result.id === "instructions").relationship}
+              These are centers we recommend.
             </p>
             <div className="tabsbar-container">
               <Tabsbar
-                  eligiblePrograms={filteredCenters}
+                  results={filteredCenters}
                 />
             </div>
             <div id="mapid"></div>

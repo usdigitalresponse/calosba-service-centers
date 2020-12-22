@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "~/components/uswds-components";
 import { useForm, useFormDictionary } from "../contexts/form";
-import rules from "../rules.json";
+import rules from "../data/rules.json";
 import assert from "assert";
 
 interface Rule {

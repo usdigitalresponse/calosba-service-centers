@@ -1,4 +1,4 @@
-export const centers = [
+[
   {
     "Id": "",
     "CenterName": "Access Plus Capital",

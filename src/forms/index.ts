@@ -1,5 +1,5 @@
 import validator from 'validator'
-import form from '../form.json'
+import form from '../data/form.json'
 import { FormSchema, RawForm, Question, QuestionType, Copy } from './types';
 import DatePicker from '../components/form-components/DatePicker'
 import TextInput from '../components/form-components/TextInput'
