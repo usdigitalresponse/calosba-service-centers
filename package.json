@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^5.6.4",
+    "@craco/craco": "^5.8.0",
     "@hapi/joi": "^17.1.1",
     "@types/classnames": "^2.2.10",
     "@types/styled-components": "^5.1.0",
