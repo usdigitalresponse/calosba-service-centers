@@ -32,7 +32,7 @@ already reported** (use the search bar on Github under Issues).
 
 Did not find it? :( So we can act quickly on it, please include the following:
 
-* Your **operating system and browser (Firefox, Chrome, Edge, Internet Explorer)**
+* Your **operating system and browser (Firefox, Chrome, Safari, Edge)**
 * Any code errors that you have access to
 
 ### Do you want a new feature?
