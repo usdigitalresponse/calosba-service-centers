@@ -50,8 +50,11 @@ const ResultsButton: React.FC<{}> = (props) => {
   // TODO: this should use the validation logic that the questions does
   const typedRules = rules as ProgramDef[];
 
+  console.log("ALL RULES", typedRules)
+
   const programSuccess = [];
   for (const progDef of typedRules) {
+    console.log("values", values)
     if (evalRuleSet(values, progDef.rules)) {
       programSuccess.push(progDef.program);
     }

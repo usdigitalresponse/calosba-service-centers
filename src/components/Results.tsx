@@ -13,12 +13,7 @@ import { useFormDictionary, useForm } from "~/contexts/form";
 import "./results.scss";
 import "./index.scss";
 
-const allCenters = [
-  'Access Plus Capital',
-  'Agriculture & Land-Based Training Association (ALBA)',
-  'ca_services_san_diego_orange_and_imperial',
-  'ca_services_la_regional_small_biz_development_center'
-]
+const allCenters = [1, 2, 3];
 
 const Results: React.FC = () => {
   const { search } = useLocation();
@@ -59,8 +54,9 @@ const Results: React.FC = () => {
 
   // hacky port of raw js from previous results page, will redo with the new results page
   const eligibleResultIds = useDevData ? allCenters : URLSearchParams(search).getAll("eligible")
-  const filteredCenters = results.filter(center => (eligibleResultIds.includes(center.id) && allCenters.includes(center.id)))
-  
+  const filteredCenters = results.filter(center => {
+    return eligibleResultIds.includes(center.Id)
+  })
   return (
     <div className="content-page">
     <Helmet>
