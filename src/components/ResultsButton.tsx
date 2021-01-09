@@ -58,16 +58,11 @@ const ResultsButton: React.FC<{}> = (props) => {
   // TODO: this should use the validation logic that the questions does
   const typedRules = rules as ProgramDef[];
 
-  console.log("ALL rules", typedRules)
-  console.log("ALL values", values)
-
   let selectedCountyName = values.ca_services_county;
   let centerIdsNearCounty = county_nearest_neighbors_data[selectedCountyName]
 
-  console.log('centers', centerIdsNearCounty)
   const selectedCenterIds = [];
   for (const progDef of typedRules) {
-    console.log("PROGRAM BEING EVALED", progDef)
     if (evalRuleSet(values, progDef.rules)) {
       selectedCenterIds.push(progDef.program);
     }

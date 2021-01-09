@@ -67,7 +67,6 @@ const Results: React.FC = () => {
   const filteredCenters = centers_data.filter(center => {
     return eligibleResultIds.includes(center.Id)
   })
-  console.log("FINAL", filteredCenters)
   return (
     <div className="content-page">
     <Helmet>

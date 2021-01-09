@@ -2,6 +2,7 @@
   "name": "small-business-programs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/",
   "dependencies": {
     "@craco/craco": "^5.6.4",
     "@hapi/joi": "^17.1.1",
@@ -35,11 +36,6 @@
     "compile": "run-p amplify:*",
     "postbuild": "react-snap"
   },
-  "reactSnap": {
-    "include": [
-      "/results"
-    ]
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -71,5 +67,8 @@
     "npm-run-all": "^4.1.5",
     "react-snap": "^1.23.0",
     "typescript": "^3.8.3"
+  },
+  "reactSnap": {
+    "skipThirdPartyRequests": true
   }
 }
