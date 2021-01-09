@@ -31,7 +31,11 @@ const Results: React.FC = () => {
     const filteredCenters = centers_data.filter(center => {
       return eligibleResultIds.includes(center.Id)
     })
-    let initialLatLong = [filteredCenters[0].Latitude, [filteredCenters[0].Longitude]]
+    if (filteredCenters.length) {
+      let initialLatLong = [filteredCenters[0]?.Latitude, [filteredCenters[0]?.Longitude]]
+    } else {
+      let initialLatLong = [36.7, -119]
+    }
     var map = L.map('mapid').setView(initialLatLong, 7);
 
     filteredCenters.forEach(center => {
@@ -48,7 +52,10 @@ const Results: React.FC = () => {
   useEffect(() => {
     updateDimensions();
     window.addEventListener("resize", updateDimensions);
-    renderLeafletMap();
+    const idsFromQuery = new URLSearchParams(search).getAll("eligible");
+    if (idsFromQuery) {
+      renderLeafletMap();
+    }
   }, []);
 
   // const {
