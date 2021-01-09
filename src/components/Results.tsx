@@ -31,10 +31,9 @@ const Results: React.FC = () => {
     const filteredCenters = centers_data.filter(center => {
       return eligibleResultIds.includes(center.Id)
     })
-    if (filteredCenters.length) {
-      let initialLatLong = [filteredCenters[0]?.Latitude, [filteredCenters[0]?.Longitude]]
-    } else {
-      let initialLatLong = [36.7, -119]
+    let initialLatLong = [36.7, -119]
+    if (filteredCenters[0]) {
+      initialLatLong = [filteredCenters[0]?.Latitude, [filteredCenters[0]?.Longitude]]
     }
     var map = L.map('mapid').setView(initialLatLong, 7);
 
