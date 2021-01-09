@@ -9,22 +9,22 @@ const Tabsbar: React.FC = (props) => {
   return (
     <nav id="mobile-tabsbar-container">
       <div className="tabsbar">
-        {props.results.map(program => {
-          return program.id === activeTab ? 
+        {props.results.map(center => {
+          return center.Id === activeTab ? 
             (
               <span className="tab-item current">
-                <a className="tab-link current" href={`#${program.id}`}><strong>{program.name}</strong></a>
+                <a className="tab-link current" href={`#${center.Id}`}><strong>{center.CenterName}</strong></a>
               </span>
             ) : (
               <span className="tab-item">
                 <a 
                   className="tab-link" 
-                  href={`#${program.id}`}
+                  href={`#${center.Id}`}
                   onClick={() => {
-                    setActiveTab(program.id)
+                    setActiveTab(center.Id)
                   }}
                 >
-                    {program.name}
+                    {center.CenterName}
                 </a>
               </span>
             )

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "~/components/uswds-components";
 import { useForm, useFormDictionary } from "../contexts/form";
 import rules from "../data/rules.json";
+import county_nearest_neighbors_data from "./../data/count_nearest_neighbors.json";
 import assert from "assert";
 
 interface Rule {
@@ -21,7 +22,14 @@ interface ProgramDef {
 function evalRuleSet(values: Record<string, any>, ruleSet: Rule[]) {
   return ruleSet.every((rule) => {
     const { op, qid, value } = rule;
+
+    console.log(county_nearest_neighbors_data)
+
     const inputValue = values[qid];
+    if (qid === 'ca_services_county') {
+      
+      
+    }
     if (inputValue === undefined) {
       // answer not filled out yet
       return false;
@@ -50,18 +58,23 @@ const ResultsButton: React.FC<{}> = (props) => {
   // TODO: this should use the validation logic that the questions does
   const typedRules = rules as ProgramDef[];
 
-  console.log("ALL RULES", typedRules)
+  console.log("ALL rules", typedRules)
+  console.log("ALL values", values)
 
-  const programSuccess = [];
+  let selectedCountyName = values.ca_services_county;
+  let centerIdsNearCounty = county_nearest_neighbors_data[selectedCountyName]
+
+  console.log('centers', centerIdsNearCounty)
+  const selectedCenterIds = [];
   for (const progDef of typedRules) {
-    console.log("values", values)
+    console.log("PROGRAM BEING EVALED", progDef)
     if (evalRuleSet(values, progDef.rules)) {
-      programSuccess.push(progDef.program);
+      selectedCenterIds.push(progDef.program);
     }
   }
 
   const href =
-    "/results?" + programSuccess.map((pid) => "eligible=" + pid).join("&");
+    "/results?" + centerIdsNearCounty.map((centerId) => "eligible=" + centerId).join("&");
 
   return (
     <Link to={href}>

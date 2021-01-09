@@ -9,11 +9,10 @@ import Sidebar from "./Sidebar";
 import Tabsbar from "./Tabsbar";
 import { Helmet } from "react-helmet";
 import { useFormDictionary, useForm } from "~/contexts/form";
+import centers_data from "./../data/centers.json";
 
 import "./results.scss";
 import "./index.scss";
-
-const allCenters = [1, 2, 3];
 
 const Results: React.FC = () => {
   const { search } = useLocation();
@@ -26,13 +25,19 @@ const Results: React.FC = () => {
     setWindowWidth(windowWidth);
   }
 
-  const renderLeafletMap = () => {
-    var map = L.map('mapid').setView([36.7, -119], 7);
+  const renderLeafletMap = (centers) => {
+    const idsFromQuery = new URLSearchParams(search).getAll("eligible");
+    const eligibleResultIds = idsFromQuery.map(id => parseInt(id))
+    const filteredCenters = centers_data.filter(center => {
+      return eligibleResultIds.includes(center.Id)
+    })
+    let initialLatLong = [filteredCenters[0].Latitude, [filteredCenters[0].Longitude]]
+    var map = L.map('mapid').setView(initialLatLong, 7);
 
-    L.marker([36.7, -119]).addTo(map)
-    L.marker([36.3, -119.2]).addTo(map)
-    L.marker([37.5, -119.2]).addTo(map)
-    L.marker([37, -118.9]).addTo(map)
+    filteredCenters.forEach(center => {
+      let latLongTuple = [center.Latitude, center.Longitude]
+      L.marker(latLongTuple).addTo(map)
+    })
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
@@ -46,17 +51,17 @@ const Results: React.FC = () => {
     renderLeafletMap();
   }, []);
 
-  const {
-    form: { results },
-  } = useForm();
-
-  const useDevData = true;
+  // const {
+  //   form: { results },
+  // } = useForm();
 
   // hacky port of raw js from previous results page, will redo with the new results page
-  const eligibleResultIds = useDevData ? allCenters : URLSearchParams(search).getAll("eligible")
-  const filteredCenters = results.filter(center => {
+  const idsFromQuery = new URLSearchParams(search).getAll("eligible");
+  const eligibleResultIds = idsFromQuery.map(id => parseInt(id))
+  const filteredCenters = centers_data.filter(center => {
     return eligibleResultIds.includes(center.Id)
   })
+  console.log("FINAL", filteredCenters)
   return (
     <div className="content-page">
     <Helmet>
@@ -77,10 +82,10 @@ const Results: React.FC = () => {
         <div className="row">
           <div className="col-md-8 left">
             <h1 className="title-top">
-              Calosba Centers near you
+              Your Recommendations
             </h1>
             <p>
-              These are centers we recommend.
+            Please contact a technical assistance center(s) to be matched with an advisor for no-cost one-on-one consulting or register for low-cost training.
             </p>
             <div className="tabsbar-container">
               <Tabsbar
@@ -94,7 +99,7 @@ const Results: React.FC = () => {
           </div>
           <div className="col-md-4">
             <Sidebar
-              eligiblePrograms={filteredCenters}
+              centers={filteredCenters}
             />
           </div>
         </div>

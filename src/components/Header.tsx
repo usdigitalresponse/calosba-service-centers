@@ -24,7 +24,7 @@ const Header: React.FC<Props> = ({ links = [], showLanguageSelect }) => {
     <div className="container">
       <nav className="navbar">
         <Link className="navbar-brand" to="/">
-          <img src="/usdr_logo_black.svg" alt="USDR Logo" />
+          <img src="/osba_logo_light.png" alt="OSBA Logo" />
         </Link>
         {showLanguageSelect && (
           <div>

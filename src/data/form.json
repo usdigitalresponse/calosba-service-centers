@@ -73,21 +73,153 @@
       "type": "multiselect",
       "options": [
         {
-          "id": "language_english",
-          "name": {
-            "en": "English"
-          }
-        },
-        {
           "id": "language_spanish",
           "name": {
             "en": "Spanish"
           }
         },
         {
-          "id": "language_Mandarin",
+          "id": "language_hmong",
+          "name": {
+            "en": "Hmong"
+          }
+        },
+        {
+          "id": "language_english",
+          "name": {
+            "en": "English"
+          }
+        },
+        {
+          "id": "language_punjabi",
+          "name": {
+            "en": "Punjabi"
+          }
+        },
+        {
+          "id": "language_mandarin",
           "name": {
             "en": "Mandarin"
+          }
+        },
+        {
+          "id": "language_vietnamese",
+          "name": {
+            "en": "Vietnamese"
+          }
+        },
+        {
+          "id": "language_hindi",
+          "name": {
+            "en": "Hindi"
+          }
+        },
+        {
+          "id": "language_urdu",
+          "name": {
+            "en": "Urdu"
+          }
+        },
+        {
+          "id": "language_american sign",
+          "name": {
+            "en": "American Sign"
+          }
+        },
+        {
+          "id": "language_cantonese",
+          "name": {
+            "en": "Cantonese"
+          }
+        },
+        {
+          "id": "language_tagalog",
+          "name": {
+            "en": "Tagalog"
+          }
+        },
+        {
+          "id": "language_korean",
+          "name": {
+            "en": "Korean"
+          }
+        },
+        {
+          "id": "language_japanese",
+          "name": {
+            "en": "Japanese"
+          }
+        },
+        {
+          "id": "language_taiwanese",
+          "name": {
+            "en": "Taiwanese"
+          }
+        },
+        {
+          "id": "language_farsi",
+          "name": {
+            "en": "Farsi"
+          }
+        },
+        {
+          "id": "language_russian",
+          "name": {
+            "en": "Russian"
+          }
+        },
+        {
+          "id": "language_portuguese",
+          "name": {
+            "en": "Portuguese"
+          }
+        },
+        {
+          "id": "language_arabic",
+          "name": {
+            "en": "Arabic"
+          }
+        },
+        {
+          "id": "language_armenian",
+          "name": {
+            "en": "Armenian"
+          }
+        },
+        {
+          "id": "language_greek",
+          "name": {
+            "en": "Greek"
+          }
+        },
+        {
+          "id": "language_pahari",
+          "name": {
+            "en": "Pahari"
+          }
+        },
+        {
+          "id": "language_gujarati",
+          "name": {
+            "en": "Gujarati"
+          }
+        },
+        {
+          "id": "language_french",
+          "name": {
+            "en": "French"
+          }
+        },
+        {
+          "id": "language_congo",
+          "name": {
+            "en": "Congo"
+          }
+        },
+        {
+          "id": "language_khmer",
+          "name": {
+            "en": "Khmer"
           }
         }
       ],
@@ -95,7 +227,7 @@
       "ca_services_only": true
     },
     {
-      "id": "ca_services_zipcode",
+      "id": "ca_services_county",
       "name": {
         "en": "Please enter your county:"
       },
@@ -161,13 +293,13 @@
         {
           "id": "needs_consulting",
           "name": {
-            "en": "Consulting/Training"
+            "en": "1-1 Consulting / Training Offerings"
           }
         },
         {
           "id": "needs_financing",
           "name": {
-            "en": "Financing (i.e. loans, investments, grants)"
+            "en": "Fundraising (i.e. loans, investments, or grants)"
           }
         },
         {
@@ -179,19 +311,19 @@
         {
           "id": "needs_ecommerce",
           "name": {
-            "en": "E-Commerce"
+            "en": "E-Commerce / Digital Strategies"
           }
         },
         {
           "id": "needs_government",
           "name": {
-            "en": "Government Procurement"
+            "en": "Government Procurement / Contracting"
           }
         },
         {
           "id": "needs_innovation",
           "name": {
-            "en": "Innovation / Technology / Start-Up"
+            "en": "Innovative Startups / Science & Tech Based Startups"
           }
         },{
           "id": "needs_international",
@@ -232,11 +364,23 @@
     {
       "Id": 1,
       "CenterName": "Access Plus Capital",
-      "Languages": "Spanish;Hmong;English;Punjabi;",
+      "Languages": [
+        "Spanish",
+        "Hmong",
+        "English",
+        "Punjabi"
+      ],
       "GeographicAreas": "Fresno, Kern, Kings, Madera, Merced, San Benito, Stanislaus, Tulare",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;Financial Management;Government Procurement / Contracting;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "Financial Management",
+        "Government Procurement / Contracting"
+      ],
       "StreetAddress": "1920 Mariposa Street",
       "City": "Fresno",
       "County": "Fresno",
@@ -252,11 +396,18 @@
     {
       "Id": 2,
       "CenterName": "Agriculture & Land-Based Training Association (ALBA)",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Monterey, San Benito, Santa Cruz",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "Trainings or Webinars;Financial Management;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "Trainings or Webinars",
+        "Financial Management",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "1700 Old Stage Road",
       "City": "Salinas",
       "County": "Monterey",
@@ -272,11 +423,34 @@
     {
       "Id": 3,
       "CenterName": "Alameda SBDC",
-      "Languages": "Spanish;Mandarin;Vietnamese;English;Hindi;Urdu;Punjabi;American Sign;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Vietnamese",
+        "English",
+        "Hindi",
+        "Urdu",
+        "Punjabi",
+        "American Sign"
+      ],
       "GeographicAreas": "Alameda",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "39399 Cherry St.",
       "City": "Newark",
       "County": "Alameda",
@@ -292,11 +466,29 @@
     {
       "Id": 4,
       "CenterName": "Alliance SBDC",
-      "Languages": "Spanish;Mandarin;Cantonese;Tagalog;Vietnamese;Korean;English;Japanese;Taiwanese;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Tagalog",
+        "Vietnamese",
+        "Korean",
+        "English",
+        "Japanese",
+        "Taiwanese"
+      ],
       "GeographicAreas": "San Diego",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;Financial Management;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "Financial Management",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "7675 Dagget St, Ste 340",
       "City": "San Diego",
       "County": "San Diego",
@@ -312,11 +504,20 @@
     {
       "Id": 5,
       "CenterName": "American Indian Chamber Education Fund PTAC",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Imperial, Inyo, Kern, Kings, Klamath, Lake, Lassen, Los Angeles, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Orange, Placer, Plumas, Riverside, Sacramento, San Benito, San Bernardino, San Diego, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Barbara, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Ventura, Yolo, Yuba",
       "HasStatewideService": "Yes",
       "SpecificCommunities": "Native American",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;E-Commerce / Digital Strategies;Government Procurement / Contracting;Marketing;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Government Procurement / Contracting",
+        "Marketing"
+      ],
       "StreetAddress": "5912 Bolsa Avenue, #108",
       "City": "Huntington Beach",
       "County": "Orange",
@@ -331,12 +532,22 @@
     },
     {
       "Id": 6,
-      "CenterName": "AnewAmerica Women's Business Center - Oakland",
-      "Languages": "Spanish;English;",
+      "CenterName": "A New America Women's Business Center - Oakland",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Alameda",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;Financial Management;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "Financial Management",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "1470 Fruitvale Ave.",
       "City": "Oakland",
       "County": "Alameda",
@@ -351,12 +562,23 @@
     },
     {
       "Id": 7,
-      "CenterName": "AnewAmerica Women's Business Center - San Jose",
-      "Languages": "Spanish;Vietnamese;English;",
+      "CenterName": "A New America Women's Business Center - San Jose",
+      "Languages": [
+        "Spanish",
+        "Vietnamese",
+        "English"
+      ],
       "GeographicAreas": "Santa Clara",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;Financial Management;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "Financial Management",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "210 N. 4th ST - Ste. #205",
       "City": "San Jose",
       "County": "Santa Clara",
@@ -372,11 +594,32 @@
     {
       "Id": 8,
       "CenterName": "Bixel Exchange SBDC",
-      "Languages": "Spanish;Mandarin;Korean;Farsi;English;Russian;Portuguese;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Korean",
+        "Farsi",
+        "English",
+        "Russian",
+        "Portuguese"
+      ],
       "GeographicAreas": "Los Angeles, Santa Barbara, Ventura",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "350 S Bixel Street",
       "City": "Los Angeles",
       "County": "Los Angeles",
@@ -392,11 +635,28 @@
     {
       "Id": 9,
       "CenterName": "Butte College SBDC",
-      "Languages": "Spanish;Hmong;English;",
+      "Languages": [
+        "Spanish",
+        "Hmong",
+        "English"
+      ],
       "GeographicAreas": "Butte, Glenn, Tehama",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "2480 Notre Dame Blvd.,",
       "City": "Chico",
       "County": "Butte",
@@ -412,11 +672,28 @@
     {
       "Id": 10,
       "CenterName": "Cal Coastal SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Monterey, San Benito",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "106 Lincoln Avenue",
       "City": "Salinas",
       "County": "Monterey",
@@ -432,11 +709,27 @@
     {
       "Id": 11,
       "CenterName": "Cal Poly CIE SBDC",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "872 Higuera St.",
       "City": "San Luis Obispo",
       "County": "San Luis Obispo",
@@ -452,11 +745,25 @@
     {
       "Id": 12,
       "CenterName": "California Capital Women's Business Center",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "El Dorado, Nevada, Placer, Sacramento, San Joaquin, Sutter, Yolo, Yuba",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "1792 Tribute Road Suite 270",
       "City": "Sacramento",
       "County": "Sacramento",
@@ -472,11 +779,23 @@
     {
       "Id": 13,
       "CenterName": "California Manufacturing Technology Consulting (CMTC)",
-      "Languages": "Spanish;",
+      "Languages": [
+        "Spanish"
+      ],
       "GeographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Imperial, Inyo, Kern, Kings, Klamath, Lake, Lassen, Los Angeles, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Orange, Placer, Plumas, Riverside, Sacramento, San Benito, San Bernardino, San Diego, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Barbara, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Ventura, Yolo, Yuba",
       "HasStatewideService": "Yes",
       "SpecificCommunities": "Manufacturing",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;E-Commerce / Digital Strategies;Financial Management;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "690 Knox Street, Suite 200, Torrance, CA",
       "City": "Torrance",
       "County": "Los Angeles",
@@ -492,11 +811,28 @@
     {
       "Id": 14,
       "CenterName": "Capital Region SBDC",
-      "Languages": "Spanish;English;Punjabi;",
+      "Languages": [
+        "Spanish",
+        "English",
+        "Punjabi"
+      ],
       "GeographicAreas": "Sacramento, Yolo, Yuba, Sutter, Colusa, El Dorado, and Placer",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "1 Capital Mall",
       "City": "Sacramento",
       "County": "Sacramento",
@@ -512,11 +848,33 @@
     {
       "Id": 15,
       "CenterName": "Central CA SBDC Network",
-      "Languages": "Spanish;Mandarin;Arabic;English;Japanese;Punjabi;Portuguese;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Arabic",
+        "English",
+        "Japanese",
+        "Punjabi",
+        "Portuguese"
+      ],
       "GeographicAreas": "Stanislaus, Tuolomne, Mariposa, Merced, Madera, Fresno, Tulare, Kings, Kern, Inyo, Mono, San Luis Obispo, San Benito, Monterey",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "1735 M St",
       "City": "Merced",
       "County": "Merced",
@@ -532,11 +890,23 @@
     {
       "Id": 16,
       "CenterName": "Coachella Valley SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Riverside, San Bernardino",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);E-Commerce / Digital Strategies;Financial Management;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "44-199 Monroe Street",
       "City": "Coachella",
       "County": "Riverside",
@@ -552,11 +922,24 @@
     {
       "Id": 17,
       "CenterName": "Coachella Valley Women's Business Center",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Riverside",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;International Trade / Exports;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "International Trade / Exports",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "77807 Flora Road, Suite A",
       "City": "Palm Desert",
       "County": "Riverside",
@@ -572,11 +955,34 @@
     {
       "Id": 18,
       "CenterName": "College of the Canyons SBDC",
-      "Languages": "Spanish;Farsi;Armenian;English;Hindi;Punjabi;Greek;American Sign;Pahari;Gujarati;",
+      "Languages": [
+        "Spanish",
+        "Farsi",
+        "Armenian",
+        "English",
+        "Hindi",
+        "Punjabi",
+        "Greek",
+        "American Sign",
+        "Pahari",
+        "Gujarati"
+      ],
       "GeographicAreas": "Los Angeles",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "26455 Rockwell Canyon Road, University Center Building - Room 272",
       "City": "Santa Clarita",
       "County": "Los Angeles",
@@ -592,11 +998,18 @@
     {
       "Id": 19,
       "CenterName": "Connect SBDC",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "San Diego",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Innovative Startups / Science & Tech Based Startups;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Innovative Startups / Science & Tech Based Startups"
+      ],
       "StreetAddress": "4110 Campus Point Ct",
       "City": "San Diego",
       "County": "San Diego",
@@ -612,11 +1025,37 @@
     {
       "Id": 20,
       "CenterName": "Contra Costa SBDC",
-      "Languages": "Spanish;Mandarin;Cantonese;Vietnamese;Farsi;English;Japanese;Punjabi;Portuguese;American Sign;French;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Vietnamese",
+        "Farsi",
+        "English",
+        "Japanese",
+        "Punjabi",
+        "Portuguese",
+        "American Sign",
+        "French"
+      ],
       "GeographicAreas": "Contra Costa",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "4071 Port Chicago Hwy #250",
       "City": "Concord",
       "County": "Contra Costa",
@@ -632,11 +1071,29 @@
     {
       "Id": 21,
       "CenterName": "CSU Bakersfield SBDC",
-      "Languages": "Spanish;Korean;English;",
+      "Languages": [
+        "Spanish",
+        "Korean",
+        "English"
+      ],
       "GeographicAreas": "Kern, Inyo, Mono",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "1631 17th Street, Suite 200",
       "City": "Bakersfied",
       "County": "Kern",
@@ -652,11 +1109,26 @@
     {
       "Id": 22,
       "CenterName": "East County SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "San Diego",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "127 East Lexington",
       "City": "El Cajon",
       "County": "San Diego",
@@ -672,11 +1144,32 @@
     {
       "Id": 23,
       "CenterName": "Economic Development Collaboartive SBDC",
-      "Languages": "Spanish;Mandarin;Cantonese;Tagalog;English;French;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Tagalog",
+        "English",
+        "French"
+      ],
       "GeographicAreas": "Ventura, Santa Barbara",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "4001 Mission Oaks Blvd  Suite A-1",
       "City": "Camarillo",
       "County": "Ventura",
@@ -692,11 +1185,27 @@
     {
       "Id": 24,
       "CenterName": "El Camino College SBDC",
-      "Languages": "Spanish;English;French;",
+      "Languages": [
+        "Spanish",
+        "English",
+        "French"
+      ],
       "GeographicAreas": "Los Angeles",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;International Trade / Exports;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "International Trade / Exports",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "13430 Hawthorne Blvd.",
       "City": "Hawthorne",
       "County": "Los Angeles",
@@ -712,11 +1221,24 @@
     {
       "Id": 25,
       "CenterName": "El Pajaro Community Development Corporation",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Monterey, San Benito, Santa Cruz",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;Financial Management;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "Financial Management",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "23 East Beach Street Suite 209",
       "City": "Watsonville",
       "County": "Santa Cruz",
@@ -732,11 +1254,24 @@
     {
       "Id": 26,
       "CenterName": "EPIC SBDC at UC, Riverside",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Riverside, San Bernardino",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);E-Commerce / Digital Strategies;Financial Management;Innovative Startups / Science & Tech Based Startups;Manufacturing;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Manufacturing",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "3403 10th Street, suite 120",
       "City": "Riverside",
       "County": "Riverside",
@@ -752,11 +1287,20 @@
     {
       "Id": 27,
       "CenterName": "Export SBDC at San Diego World Trade Center",
-      "Languages": "Spanish;Mandarin;English;Japanese;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "English",
+        "Japanese"
+      ],
       "GeographicAreas": "San Diego",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;International Trade / Exports;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "International Trade / Exports"
+      ],
       "StreetAddress": "530 B St, 7th Floor",
       "City": "San Diego",
       "County": "San Diego",
@@ -772,11 +1316,23 @@
     {
       "Id": 28,
       "CenterName": "Fresno Area Hispanic Foundation",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Fresno, Kern, Kings, Madera, Merced, San Joaquin, Stanislaus, Tulare",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;International Trade / Exports;Marketing;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "International Trade / Exports",
+        "Marketing"
+      ],
       "StreetAddress": "1444 Fulton St",
       "City": "Fresno",
       "County": "Fresno County",
@@ -792,11 +1348,29 @@
     {
       "Id": 29,
       "CenterName": "Hispanic Satellite and Silicon Valley SBDC",
-      "Languages": "Spanish;Mandarin;Tagalog;Vietnamese;English;Taiwanese;Portuguese;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Tagalog",
+        "Vietnamese",
+        "English",
+        "Taiwanese",
+        "Portuguese"
+      ],
       "GeographicAreas": "Santa Clara",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;International Trade / Exports;Marketing;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "International Trade / Exports",
+        "Marketing",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "1887 Monterey Rd, Suite 215",
       "City": "San Jose",
       "County": "Santa Clara",
@@ -812,11 +1386,27 @@
     {
       "Id": 30,
       "CenterName": "Imperial Valley SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Imperial",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "2415 Imperial Business Parkway Ste A",
       "City": "Imperial",
       "County": "Imperial",
@@ -832,11 +1422,20 @@
     {
       "Id": 31,
       "CenterName": "Indian Dispute Resolution Services, Inc.",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Imperial, Inyo, Kern, Kings, Klamath, Lake, Lassen, Los Angeles, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Orange, Placer, Plumas, Riverside, Sacramento, San Benito, San Bernardino, San Diego, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Barbara, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Ventura, Yolo, Yuba",
       "HasStatewideService": "Yes",
       "SpecificCommunities": "Native American",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Marketing;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Marketing"
+      ],
       "StreetAddress": "P.O. Box 877",
       "City": "Plymouth",
       "County": "Amador",
@@ -852,11 +1451,24 @@
     {
       "Id": 32,
       "CenterName": "Inland Empire SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Riverside, San Bernardino",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "3780 Market Street",
       "City": "Riverside",
       "County": "Riverside",
@@ -872,11 +1484,21 @@
     {
       "Id": 33,
       "CenterName": "Inland Empire Women's Business Center",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Riverside, San Bernardino",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;E-Commerce / Digital Strategies;Financial Management;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "1003 E. Cooley Drive, Suite 109",
       "City": "Colton",
       "County": "San Bernardino",
@@ -892,11 +1514,29 @@
     {
       "Id": 34,
       "CenterName": "International Rescue Committee SBDC",
-      "Languages": "Spanish;Tagalog;Farsi;Arabic;Hmong;English;Urdu;Punjabi;Portuguese;French;Congo;",
+      "Languages": [
+        "Spanish",
+        "Tagalog",
+        "Farsi",
+        "Arabic",
+        "Hmong",
+        "English",
+        "Urdu",
+        "Punjabi",
+        "Portuguese",
+        "French",
+        "Congo"
+      ],
       "GeographicAreas": "San Diego",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "Operations"
+      ],
       "StreetAddress": "5348 University Ave #205",
       "City": "San Diego",
       "County": "San Diego",
@@ -912,11 +1552,20 @@
     {
       "Id": 35,
       "CenterName": "LA County PTAC",
-      "Languages": "Spanish;Korean;English;",
+      "Languages": [
+        "Spanish",
+        "Korean",
+        "English"
+      ],
       "GeographicAreas": "Los Angeles",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;Government Procurement / Contracting;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "Government Procurement / Contracting"
+      ],
       "StreetAddress": "133 North Sunol Drive",
       "City": "East Los Angeles",
       "County": "Los Angeles",
@@ -932,11 +1581,18 @@
     {
       "Id": 36,
       "CenterName": "Launchpad SBDC",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "Orange and Inland Empire",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Fundraising (i.e. loans, investments, or grants);Financial Management;Innovative Startups / Science & Tech Based Startups;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Financial Management",
+        "Innovative Startups / Science & Tech Based Startups"
+      ],
       "StreetAddress": "65 Enterprise",
       "City": "Aliso Viejo",
       "County": "Orange",
@@ -952,11 +1608,29 @@
     {
       "Id": 37,
       "CenterName": "Long Beach SBDC",
-      "Languages": "Spanish;Korean;English;",
+      "Languages": [
+        "Spanish",
+        "Korean",
+        "English"
+      ],
       "GeographicAreas": "Los Angeles",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "4900 East Conant Street, Building O-2",
       "City": "Long Beach",
       "County": "Los Angeles",
@@ -972,11 +1646,32 @@
     {
       "Id": 38,
       "CenterName": "Los Angeles Regional SBDC Lead Center",
-      "Languages": "Spanish;Tagalog;Farsi;English;Khmer;French;",
+      "Languages": [
+        "Spanish",
+        "Tagalog",
+        "Farsi",
+        "English",
+        "Khmer",
+        "French"
+      ],
       "GeographicAreas": "Los Angeles, Santa Barbara, Ventura",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "4900 East Conant Street",
       "City": "Long Beach",
       "County": "Los Angeles",
@@ -992,11 +1687,33 @@
     {
       "Id": 39,
       "CenterName": "LTSC API Small Business Program Women's Business Center",
-      "Languages": "Spanish;Mandarin;Cantonese;Tagalog;Korean;English;Japanese;Khmer;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Tagalog",
+        "Korean",
+        "English",
+        "Japanese",
+        "Khmer"
+      ],
       "GeographicAreas": "Los Angeles",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "231 E 3rd Street",
       "City": "Los Angeles",
       "County": "Los Angeles",
@@ -1012,11 +1729,17 @@
     {
       "Id": 40,
       "CenterName": "Main Street Launch",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Alameda, San Francisco, San Joaquin",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars"
+      ],
       "StreetAddress": "2101 Webster Street, Suite 1200",
       "City": "Oakland",
       "County": "Alameda",
@@ -1032,11 +1755,28 @@
     {
       "Id": 41,
       "CenterName": "Marin SBDC",
-      "Languages": "Spanish;English;French;",
+      "Languages": [
+        "Spanish",
+        "English",
+        "French"
+      ],
       "GeographicAreas": "Marin",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "50 Acacia Ave",
       "City": "San Rafael",
       "County": "Marin",
@@ -1052,11 +1792,24 @@
     {
       "Id": 42,
       "CenterName": "Mendocino WBC",
-      "Languages": "Spanish;",
+      "Languages": [
+        "Spanish"
+      ],
       "GeographicAreas": "Mendocino",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Innovative Startups / Science & Tech Based Startups;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "345 N Franklin St.",
       "City": "Fort Bragg",
       "County": "Mendocino",
@@ -1072,11 +1825,26 @@
     {
       "Id": 43,
       "CenterName": "Mission Community Services Corporation Women's Business Center",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Kern, Monterey, San Luis Obispo",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "71 Zaca Lane #131",
       "City": "San Luis Obispo",
       "County": "San Luis Obispo",
@@ -1092,11 +1860,26 @@
     {
       "Id": 44,
       "CenterName": "Napa Sonoma SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Napa, Sonoma",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "2277 Napa Vallejo Hwy., Bldg 3300",
       "City": "Napa",
       "County": "Napa",
@@ -1112,11 +1895,26 @@
     {
       "Id": 45,
       "CenterName": "New Economics for Women - Women's Business Center",
-      "Languages": "Spanish;Armenian;Russian;",
+      "Languages": [
+        "Spanish",
+        "Armenian",
+        "Russian"
+      ],
       "GeographicAreas": "Los Angeles",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "7500 Alabama Ave",
       "City": "Canoga Park",
       "County": "Los Angeles",
@@ -1132,11 +1930,18 @@
     {
       "Id": 46,
       "CenterName": "Norcal PTAC",
-      "Languages": "Tagalog;",
+      "Languages": [
+        "Tagalog"
+      ],
       "GeographicAreas": "Alameda, Contra Costa, Del Norte, Humboldt, Marin, Mendocino, Napa, San Francisco, San Mateo, Santa Clara, Shasta, Siskiyou, Solano, Sonoma, Trinity",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;Government Procurement / Contracting;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "Government Procurement / Contracting"
+      ],
       "StreetAddress": "1 Harpst St",
       "City": "Arcata",
       "County": "Humboldt",
@@ -1152,11 +1957,34 @@
     {
       "Id": 47,
       "CenterName": "Norcal SBDC Finance Center",
-      "Languages": "Spanish;Vietnamese;Farsi;Arabic;English;Hindi;Punjabi;French;",
+      "Languages": [
+        "Spanish",
+        "Vietnamese",
+        "Farsi",
+        "Arabic",
+        "English",
+        "Hindi",
+        "Punjabi",
+        "French"
+      ],
       "GeographicAreas": "",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "705 Gold Lake Drive, Suite 250",
       "City": "Folsom",
       "County": "Sacramento",
@@ -1172,11 +2000,41 @@
     {
       "Id": 48,
       "CenterName": "Norcal SBDC Lead Center",
-      "Languages": "Spanish;Mandarin;Cantonese;Vietnamese;Farsi;Arabic;Hmong;English;Japanese;Hindi;Urdu;Punjabi;Portuguese;American Sign;French;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Vietnamese",
+        "Farsi",
+        "Arabic",
+        "Hmong",
+        "English",
+        "Japanese",
+        "Hindi",
+        "Urdu",
+        "Punjabi",
+        "Portuguese",
+        "American Sign",
+        "French"
+      ],
       "GeographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Glenn, Humboldt, Lake, Lassen, Marin, Mendocino, Modoc, Napa, Nevada, Placer, Plumas, Sacramento, San Francisco, San Joaquin, San Mateo, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Sutter, Tehama, Trinity, Yolo, Yuba",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "416 3rd Street",
       "City": "Eureka",
       "County": "Humboldt",
@@ -1192,11 +2050,29 @@
     {
       "Id": 49,
       "CenterName": "North San Diego SBDC",
-      "Languages": "Spanish;English;Hindi;",
+      "Languages": [
+        "Spanish",
+        "English",
+        "Hindi"
+      ],
       "GeographicAreas": "San Diego",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "2075 Las Palmas Dr",
       "City": "Carlsbad",
       "County": "San Diego",
@@ -1212,11 +2088,20 @@
     {
       "Id": 50,
       "CenterName": "OCHCC SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Orange, Riverside, San Bernardino",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Financial Management;Government Procurement / Contracting;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Financial Management",
+        "Government Procurement / Contracting"
+      ],
       "StreetAddress": "1 Banting",
       "City": "Irvine",
       "County": "Orange",
@@ -1232,11 +2117,32 @@
     {
       "Id": 51,
       "CenterName": "OCIE SBDC - Lead Center (CSUF)",
-      "Languages": "Spanish;Mandarin;Cantonese;Vietnamese;Farsi;Arabic;English;Japanese;French;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Vietnamese",
+        "Farsi",
+        "Arabic",
+        "English",
+        "Japanese",
+        "French"
+      ],
       "GeographicAreas": "Orange, Riverside, San Bernardino",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;International Trade / Exports;Manufacturing;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "1 Banting",
       "City": "Irvine",
       "County": "Orange",
@@ -1252,11 +2158,36 @@
     {
       "Id": 52,
       "CenterName": "PACE Women's Business Center",
-      "Languages": "Spanish;Mandarin;Cantonese;Tagalog;Vietnamese;Korean;English;Japanese;Taiwanese;French;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Tagalog",
+        "Vietnamese",
+        "Korean",
+        "English",
+        "Japanese",
+        "Taiwanese",
+        "French"
+      ],
       "GeographicAreas": "Los Angeles",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "1055 Wilshire Blvd., Ste. 900B",
       "City": "Los Angeles",
       "County": "Los Angeles",
@@ -1272,11 +2203,38 @@
     {
       "Id": 53,
       "CenterName": "Pacific Asian Consortium in Employment",
-      "Languages": "Spanish;Mandarin;Cantonese;Tagalog;Vietnamese;Korean;Armenian;English;Hindi;Taiwanese;Khmer;French;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Tagalog",
+        "Vietnamese",
+        "Korean",
+        "Armenian",
+        "English",
+        "Hindi",
+        "Taiwanese",
+        "Khmer",
+        "French"
+      ],
       "GeographicAreas": "Imperial, Los Angeles, Orange, Riverside, San Bernardino, San Diego, Ventura",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "1055 Wilshire Boulevard, Ste. 900B",
       "City": "Los Angeles, CA",
       "County": "Los Angeles",
@@ -1292,11 +2250,25 @@
     {
       "Id": 54,
       "CenterName": "Pacific Coast Regional (PCR) SBDC",
-      "Languages": "Spanish;Arabic;English;",
+      "Languages": [
+        "Spanish",
+        "Arabic",
+        "English"
+      ],
       "GeographicAreas": "Los Angeles",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Marketing;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Marketing",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "3255 Wilshire Blvd.,Suite 1501, Los Angeles, CA 90010",
       "City": "Los Angeles",
       "County": "Los Angeles",
@@ -1312,11 +2284,26 @@
     {
       "Id": 55,
       "CenterName": "Pasadena City College SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Los Angeles",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Innovative Startups / Science & Tech Based Startups;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "3035 E. Foothill Blvd., Room 122",
       "City": "Pasadena",
       "County": "Los Angeles",
@@ -1332,11 +2319,25 @@
     {
       "Id": 56,
       "CenterName": "Pasadena MBDA Business Center",
-      "Languages": "Spanish;Mandarin;Cantonese;Korean;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Korean"
+      ],
       "GeographicAreas": "Los Angeles",
       "HasStatewideService": "",
       "SpecificCommunities": "Minority / Person of Color",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;International Trade / Exports;Marketing;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "International Trade / Exports",
+        "Marketing"
+      ],
       "StreetAddress": "177 East Colorado Blvd., Suite 200",
       "City": "Pasadena",
       "County": "Los Angeles",
@@ -1352,11 +2353,21 @@
     {
       "Id": 57,
       "CenterName": "Rancho Santiago - Santa Ana SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Orange",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);E-Commerce / Digital Strategies;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "E-Commerce / Digital Strategies",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "1300 South Bristol Street",
       "City": "Santa Ana",
       "County": "Orange",
@@ -1372,11 +2383,21 @@
     {
       "Id": 58,
       "CenterName": "Renaissance Women's Business Center",
-      "Languages": "Spanish;",
+      "Languages": [
+        "Spanish"
+      ],
       "GeographicAreas": "San Francisco",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "275 5th Street",
       "City": "San Francisco",
       "County": "San Francisco",
@@ -1392,11 +2413,22 @@
     {
       "Id": 59,
       "CenterName": "Riverside Community College District, PTAC",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "3801 Market Street",
       "City": "Riverside",
       "County": "Riverside",
@@ -1412,11 +2444,23 @@
     {
       "Id": 60,
       "CenterName": "Sacramento MBDA Export Center",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Imperial, Inyo, Kern, Kings, Klamath, Lake, Lassen, Los Angeles, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Orange, Placer, Plumas, Riverside, Sacramento, San Benito, San Bernardino, San Diego, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Barbara, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Ventura, Yolo, Yuba",
       "HasStatewideService": "Yes",
       "SpecificCommunities": "Minority / Person of Color",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;International Trade / Exports;Marketing;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "International Trade / Exports",
+        "Marketing"
+      ],
       "StreetAddress": "2331 Alhambra Blvd. Suite 100",
       "City": "Sacramento",
       "County": "Sacramento",
@@ -1432,11 +2476,41 @@
     {
       "Id": 61,
       "CenterName": "San Diego & Imperial SBDC Network",
-      "Languages": "Spanish;Mandarin;Cantonese;Tagalog;Vietnamese;Korean;Farsi;Arabic;Hmong;English;Japanese;Hindi;Portuguese;American Sign;French;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Tagalog",
+        "Vietnamese",
+        "Korean",
+        "Farsi",
+        "Arabic",
+        "Hmong",
+        "English",
+        "Japanese",
+        "Hindi",
+        "Portuguese",
+        "American Sign",
+        "French"
+      ],
       "GeographicAreas": "Imperial, San Diego",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "880 National City Blvd",
       "City": "National City",
       "County": "San Diego",
@@ -1452,11 +2526,22 @@
     {
       "Id": 62,
       "CenterName": "San Diego and Imperial Women's Business Center",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Imperial, San Diego",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "880 National City Blvd",
       "City": "National City",
       "County": "San Diego",
@@ -1472,11 +2557,17 @@
     {
       "Id": 63,
       "CenterName": "San Diego, Orange, & Imperial PTAC",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "Imperial, Orange, San Diego",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Government Procurement / Contracting;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Government Procurement / Contracting"
+      ],
       "StreetAddress": "880 National City Blvd. Ste. 7100",
       "City": "National City",
       "County": "San Diego",
@@ -1492,11 +2583,30 @@
     {
       "Id": 64,
       "CenterName": "San Francisco SBDC",
-      "Languages": "Spanish;Mandarin;Cantonese;Vietnamese;Korean;Armenian;English;French;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Vietnamese",
+        "Korean",
+        "Armenian",
+        "English",
+        "French"
+      ],
       "GeographicAreas": "San Francisco",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "1650 Mission St., Suite 101A",
       "City": "San Francisco",
       "County": "San Francisco",
@@ -1512,11 +2622,23 @@
     {
       "Id": 65,
       "CenterName": "San Joaquin Delta College SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "San Joaquin, Calaveras, Amador, Alpine",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Financial Management;Government Procurement / Contracting;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "56 S. Lincoln St.",
       "City": "Stockton",
       "County": "San Joaquin",
@@ -1532,11 +2654,24 @@
     {
       "Id": 66,
       "CenterName": "San Joaquin Valley Rural Development Center",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Fresno, Kern, Kings, Madera, Merced, San Joaquin, Stanislaus, Tulare",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "550 E Shaw Ave, Suite 230",
       "City": "Fresno",
       "County": "Fresno",
@@ -1552,11 +2687,25 @@
     {
       "Id": 67,
       "CenterName": "San Jose MBDA Business Center",
-      "Languages": "Spanish;Mandarin;Cantonese;Vietnamese;English;Hindi;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Vietnamese",
+        "English",
+        "Hindi"
+      ],
       "GeographicAreas": "Alameda, Contra Costa, Fresno, Kern, Kings, Madera, Marin, Mariposa, Merced, Monterey, Napa, San Benito, San Francisco, San Mateo, Santa Clara, Santa Cruz, Solano, Sonoma, Tulare",
       "HasStatewideService": "",
       "SpecificCommunities": "Minority / Person of Color",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups"
+      ],
       "StreetAddress": "3031 Tisch Way, Suite 80",
       "City": "San Jose",
       "County": "Santa Clara",
@@ -1572,11 +2721,39 @@
     {
       "Id": 68,
       "CenterName": "San Mateo SBDC",
-      "Languages": "Spanish;Mandarin;Cantonese;Tagalog;Vietnamese;Farsi;English;Japanese;Hindi;Punjabi;Portuguese;American Sign;French;",
+      "Languages": [
+        "Spanish",
+        "Mandarin",
+        "Cantonese",
+        "Tagalog",
+        "Vietnamese",
+        "Farsi",
+        "English",
+        "Japanese",
+        "Hindi",
+        "Punjabi",
+        "Portuguese",
+        "American Sign",
+        "French"
+      ],
       "GeographicAreas": "San Mateo",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "Administrative office is located remotely",
       "City": "Administrative office is located remotely",
       "County": "San Mateo",
@@ -1592,11 +2769,27 @@
     {
       "Id": 69,
       "CenterName": "Santa Cruz SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Santa Cruz",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "6500 Soquel Drive,",
       "City": "Aptos",
       "County": "Santa Cruz",
@@ -1612,11 +2805,31 @@
     {
       "Id": 70,
       "CenterName": "Shasta-Cascade SBDC",
-      "Languages": "Spanish;Farsi;English;Hindi;Punjabi;",
+      "Languages": [
+        "Spanish",
+        "Farsi",
+        "English",
+        "Hindi",
+        "Punjabi"
+      ],
       "GeographicAreas": "Shasta, Trinity",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "5800 Airport Rd",
       "City": "Redding",
       "County": "Shasta",
@@ -1632,11 +2845,25 @@
     {
       "Id": 71,
       "CenterName": "Sierra SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Nevada, Placer, El Dorado, Modoc, Sierra, Plumas, Lassen",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Innovative Startups / Science & Tech Based Startups;Manufacturing;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Manufacturing",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "10183 Truckee Airport Rd,",
       "City": "Truckee",
       "County": "Nevada",
@@ -1652,11 +2879,23 @@
     {
       "Id": 72,
       "CenterName": "Small Business Transportation Resource Center Southwest Region",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Imperial, Inyo, Kern, Kings, Klamath, Lake, Lassen, Los Angeles, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Orange, Placer, Plumas, Riverside, Sacramento, San Benito, San Bernardino, San Diego, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Barbara, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Ventura, Yolo, Yuba",
       "HasStatewideService": "Yes",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "2331 Alhambra Blvd. Suite 100",
       "City": "Sacramento",
       "County": "Sacramento",
@@ -1672,11 +2911,27 @@
     {
       "Id": 73,
       "CenterName": "Solano SBDC",
-      "Languages": "Spanish;Tagalog;",
+      "Languages": [
+        "Spanish",
+        "Tagalog"
+      ],
       "GeographicAreas": "Solano",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "500 Chadbourne Road",
       "City": "Fairfield",
       "County": "Solano",
@@ -1692,11 +2947,25 @@
     {
       "Id": 74,
       "CenterName": "South San Diego SBDC",
-      "Languages": "Spanish;",
+      "Languages": [
+        "Spanish"
+      ],
       "GeographicAreas": "San Diego",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Innovative Startups / Science & Tech Based Startups;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "880 National City Blvd",
       "City": "National City",
       "County": "San Diego",
@@ -1712,11 +2981,25 @@
     {
       "Id": 75,
       "CenterName": "Tech Futures Group",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Glenn, Humboldt, Lake, Lassen, Marin, Mendocino, Modoc, Napa, Nevada, Placer, Plumas, Sacramento, San Francisco, San Joaquin, San Mateo, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Sutter, Tehama, Trinity, Yolo, Yuba",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;Manufacturing;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Manufacturing",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "2120 University Ave",
       "City": "Berkeley",
       "County": "Alameda",
@@ -1732,11 +3015,21 @@
     {
       "Id": 76,
       "CenterName": "The Brink SBDC at University of San Diego",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "San Diego, Imperial",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Innovative Startups / Science & Tech Based Startups;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Innovative Startups / Science & Tech Based Startups"
+      ],
       "StreetAddress": "5998 Alcala Park",
       "City": "San Diego",
       "County": "San Diego",
@@ -1752,11 +3045,28 @@
     {
       "Id": 77,
       "CenterName": "UC Merced SBDC",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Stanislaus, Tuolomne, Mariposa, Merced, Madera, Fresno, Tulare, Kings, Kern, Inyo, Mono, San Luis Obispo, San Benito, Monterey",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "1735 M St; Suite 111",
       "City": "Merced",
       "County": "Merced",
@@ -1772,11 +3082,21 @@
     {
       "Id": 78,
       "CenterName": "UCI SBDC @ Beall Applied Innovation Center",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "Orange",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Financial Management;Innovative Startups / Science & Tech Based Startups;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Financial Management",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "5141 California Avenue",
       "City": "Irvine",
       "County": "Orange",
@@ -1792,11 +3112,25 @@
     {
       "Id": 79,
       "CenterName": "University of La Verne SBDC",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "Los Angeles",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "2180 Third Street",
       "City": "La Verne",
       "County": "Los Angeles",
@@ -1812,11 +3146,26 @@
     {
       "Id": 80,
       "CenterName": "Valley Community SBDC",
-      "Languages": "Spanish;Armenian;Hmong;Punjabi;",
+      "Languages": [
+        "Spanish",
+        "Armenian",
+        "Hmong",
+        "Punjabi"
+      ],
       "GeographicAreas": "Fresno, Madera, Tulare, Kings",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Government Procurement / Contracting;International Trade / Exports;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Government Procurement / Contracting",
+        "International Trade / Exports",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "390B West Fir Avenue #300",
       "City": "Clovis",
       "County": "Fresno",
@@ -1832,11 +3181,27 @@
     {
       "Id": 81,
       "CenterName": "Valley Sierra SBDC",
-      "Languages": "Spanish;",
+      "Languages": [
+        "Spanish"
+      ],
       "GeographicAreas": "Stanislaus and Tuolomne",
       "HasStatewideService": "",
       "SpecificCommunities": "",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;International Trade / Exports;Manufacturing;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "International Trade / Exports",
+        "Manufacturing",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "1625 I Street",
       "City": "Modesto",
       "County": "Stanislaus",
@@ -1852,11 +3217,25 @@
     {
       "Id": 82,
       "CenterName": "Veterans Business Outreach Center",
-      "Languages": "English;Russian;",
+      "Languages": [
+        "English",
+        "Russian"
+      ],
       "GeographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Inyo, Kern, Kings, Klamath, Lake, Lassen, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Placer, Plumas, Sacramento, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Yolo, Yuba",
       "HasStatewideService": "Yes",
       "SpecificCommunities": "Veteran",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;Innovative Startups / Science & Tech Based Startups;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "Innovative Startups / Science & Tech Based Startups",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "3831 N Freeway Blvd. Suite 105",
       "City": "Sacramento",
       "County": "Sacramento",
@@ -1872,11 +3251,23 @@
     {
       "Id": 83,
       "CenterName": "Women's Business Center at JEDI",
-      "Languages": "English;",
+      "Languages": [
+        "English"
+      ],
       "GeographicAreas": "Siskiyou",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Government Procurement / Contracting;International Trade / Exports;Marketing;Operations;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Government Procurement / Contracting",
+        "International Trade / Exports",
+        "Marketing",
+        "Operations"
+      ],
       "StreetAddress": "205 Chestnut Street",
       "City": "Mt Shasta",
       "County": "Siskiyou",
@@ -1892,11 +3283,24 @@
     {
       "Id": 84,
       "CenterName": "Women's Economic Ventures Women's Business Center - Santa Barbara",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Santa Barbara",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "333 South Salinas Street",
       "City": "Santa Barbara",
       "County": "Santa Barbara",
@@ -1912,11 +3316,24 @@
     {
       "Id": 85,
       "CenterName": "Women's Economic Ventures Women's Business Center - Ventura",
-      "Languages": "Spanish;English;",
+      "Languages": [
+        "Spanish",
+        "English"
+      ],
       "GeographicAreas": "Ventura",
       "HasStatewideService": "",
       "SpecificCommunities": "Women",
-      "AreasOfService": "1-1 Consulting / Training Offerings;Trainings or Webinars;Fundraising (i.e. loans, investments, or grants);Disaster Assistance;E-Commerce / Digital Strategies;Financial Management;Marketing;Operations;Employer / Workforce Issues;",
+      "AreasOfService": [
+        "1-1 Consulting / Training Offerings",
+        "Trainings or Webinars",
+        "Fundraising (i.e. loans, investments, or grants)",
+        "Disaster Assistance",
+        "E-Commerce / Digital Strategies",
+        "Financial Management",
+        "Marketing",
+        "Operations",
+        "Employer / Workforce Issues"
+      ],
       "StreetAddress": "290 Maple Court Suite 268",
       "City": "Ventura",
       "County": "Ventura",
@@ -1929,5 +3346,32 @@
       "PhoneNumber": "(805) 965-6073",
       "SocialMedia": "www.facebook.com/wevenespanol; www.facebook.com/WomensEconomicVentures; www.instagram.com/wevenespanol; www.instagram.com/womenseconomicventures"
     }
+  ],
+  "Languages": [
+    "Spanish",
+    "Hmong",
+    "English",
+    "Punjabi",
+    "Mandarin",
+    "Vietnamese",
+    "Hindi",
+    "Urdu",
+    "American Sign",
+    "Cantonese",
+    "Tagalog",
+    "Korean",
+    "Japanese",
+    "Taiwanese",
+    "Farsi",
+    "Russian",
+    "Portuguese",
+    "Arabic",
+    "Armenian",
+    "Greek",
+    "Pahari",
+    "Gujarati",
+    "French",
+    "Congo",
+    "Khmer"
   ]
 }

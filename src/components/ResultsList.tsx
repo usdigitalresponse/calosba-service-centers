@@ -4,18 +4,18 @@ import React, { useEffect } from "react";
 import "./form-style.scss";
 import "./results.scss";
 
-const ResultsList: React.FC = (props) => props.results.map((program, i) => {
+const ResultsList: React.FC = (props) => props.results.map((center, i) => {
   return (
-    <div id={program.id} className="loan-container">
-      <a name={program.id}></a>
+    <div id={center.Id} className="loan-container">
+      <a name={center.Id}></a>
       {/* <label className="top-label">
         {program.address}
       </label> */}
       <h2 className="title">
-        {program.name}
+        {center.CenterName}
       </h2>
       <p className="loan-description">
-        <strong>Address: </strong><span>{program.address}</span>
+        <strong>Address: </strong><span>{center.full_address}</span>
       </p>
       <p>
       </p>
@@ -23,20 +23,23 @@ const ResultsList: React.FC = (props) => props.results.map((program, i) => {
         <strong>Languages</strong>
       </p>
       <p>
-        {program.languages}
+        {center.Languages.map(lang => {
+          return <li>{lang}</li>
+        })}
       </p>
       <p className="loan-description">
         <strong>Services Offered</strong>
       </p>
       <p>
-        {program.what}
+        {center.AreasOfService.map(area => {
+          return <li>{area}</li>
+        })}
       </p>
       <a
         className="usa-button"
-        data-ga-label={program.id}
         onClick={(e) => {
           e.preventDefault();
-          window.open(program.url, '_blank')
+          window.open(center.Website, '_blank')
           }}
         type="button"
         href="#"

@@ -1,21 +1,21 @@
 {
   "Alameda": [
     "Alameda SBDC",
-    "AnewAmerica Women's Business Center - Oakland ",
+    "A New America Women's Business Center - Oakland",
     "San Mateo SBDC",
-    "AnewAmerica Women's Business Center - San Jose ",
+    "A New America Women's Business Center - San Jose",
     "Main Street Launch"
   ],
   "Alpine": [
     "Sierra SBDC",
     "Indian Dispute Resolution Services, Inc.",
-    "Norcal SBDC Finance Center ",
+    "Norcal SBDC Finance Center",
     "California Capital Women's Business Center",
     "Sacramento MBDA Export Center"
   ],
   "Amador": [
     "Indian Dispute Resolution Services, Inc.",
-    "Norcal SBDC Finance Center ",
+    "Norcal SBDC Finance Center",
     "California Capital Women's Business Center",
     "Sacramento MBDA Export Center",
     "Veterans Business Outreach Center"
@@ -24,14 +24,14 @@
     "Butte College SBDC",
     "Shasta-Cascade SBDC",
     "Veterans Business Outreach Center",
-    "Norcal SBDC Finance Center ",
+    "Norcal SBDC Finance Center",
     "California Capital Women's Business Center"
   ],
   "Calaveras": [
     "Indian Dispute Resolution Services, Inc.",
     "San Joaquin Delta College SBDC",
     "Valley Sierra SBDC",
-    "Norcal SBDC Finance Center ",
+    "Norcal SBDC Finance Center",
     "Sacramento MBDA Export Center"
   ],
   "Colusa": [
@@ -44,7 +44,7 @@
   "Contra Costa": [
     "Contra Costa SBDC",
     "Tech Futures Group",
-    "AnewAmerica Women's Business Center - Oakland ",
+    "A New America Women's Business Center - Oakland",
     "Main Street Launch",
     "Solano SBDC"
   ],
@@ -57,15 +57,15 @@
   ],
   "El Dorado": [
     "Indian Dispute Resolution Services, Inc.",
-    "Norcal SBDC Finance Center ",
+    "Norcal SBDC Finance Center",
     "Sierra SBDC",
     "California Capital Women's Business Center",
     "Veterans Business Outreach Center"
   ],
   "Fresno": [
     "Valley Community SBDC",
-    "San Joaquin Valley Rural Development Center ",
-    "Fresno Area Hispanic Foundation ",
+    "San Joaquin Valley Rural Development Center",
+    "Fresno Area Hispanic Foundation",
     "Central CA SBDC Network",
     "Valley Sierra SBDC"
   ],
@@ -93,20 +93,20 @@
   "Inyo": [
     "CSU Bakersfield SBDC",
     "Valley Community SBDC",
-    "San Joaquin Valley Rural Development Center ",
-    "Fresno Area Hispanic Foundation ",
+    "San Joaquin Valley Rural Development Center",
+    "",
     "College of the Canyons SBDC"
   ],
   "Kern": [
     "CSU Bakersfield SBDC",
     "College of the Canyons SBDC",
     "New Economics for Women - Women's Business Center",
-    "Economic Development Collaboartive SBDC ",
+    "Economic Development Collaboartive SBDC",
     "Women's Economic Ventures Women's Business Center - Ventura"
   ],
   "Kings": [
-    "Fresno Area Hispanic Foundation ",
-    "San Joaquin Valley Rural Development Center ",
+    "Fresno Area Hispanic Foundation",
+    "San Joaquin Valley Rural Development Center",
     "Valley Community SBDC",
     "CSU Bakersfield SBDC",
     "Cal Poly CIE SBDC"
@@ -123,26 +123,26 @@
     "Butte College SBDC",
     "Women's Business Center at JEDI",
     "Sierra SBDC",
-    "Norcal SBDC Finance Center "
+    "Norcal SBDC Finance Center"
   ],
   "Los Angeles": [
     "Pasadena MBDA Business Center",
     "Pacific Coast Regional (PCR) SBDC",
-    "Bixel Exchange SBDC ",
+    "Bixel Exchange SBDC",
     "PACE Women's Business Center",
     "LTSC API Small Business Program Women's Business Center"
   ],
   "Madera": [
     "Valley Community SBDC",
-    "San Joaquin Valley Rural Development Center ",
-    "Fresno Area Hispanic Foundation ",
+    "San Joaquin Valley Rural Development Center",
+    "Fresno Area Hispanic Foundation",
     "Central CA SBDC Network",
     "Valley Sierra SBDC"
   ],
   "Marin": [
-    "Marin SBDC ",
+    "Marin SBDC",
     "San Francisco SBDC",
-    "Renaissance Women's Business Center ",
+    "Renaissance Women's Business Center",
     "Tech Futures Group",
     "Napa Sonoma SBDC"
   ],
@@ -150,8 +150,8 @@
     "Central CA SBDC Network",
     "Valley Community SBDC",
     "Valley Community SBDC",
-    "San Joaquin Valley Rural Development Center ",
-    "Fresno Area Hispanic Foundation "
+    "San Joaquin Valley Rural Development Center",
+    "Fresno Area Hispanic Foundation"
   ],
   "Mendocino": [
     "Butte College SBDC",
@@ -164,8 +164,8 @@
     "Central CA SBDC Network",
     "Valley Sierra SBDC",
     "Valley Sierra SBDC",
-    "San Joaquin Valley Rural Development Center ",
-    "Fresno Area Hispanic Foundation "
+    "San Joaquin Valley Rural Development Center",
+    "Fresno Area Hispanic Foundation"
   ],
   "Modoc": [
     "Women's Business Center at JEDI",
@@ -176,8 +176,8 @@
   ],
   "Mono": [
     "Valley Community SBDC",
-    "San Joaquin Valley Rural Development Center ",
-    "Fresno Area Hispanic Foundation ",
+    "San Joaquin Valley Rural Development Center",
+    "Fresno Area Hispanic Foundation",
     "Central CA SBDC Network",
     "Indian Dispute Resolution Services, Inc."
   ],
@@ -192,12 +192,12 @@
     "Napa Sonoma SBDC",
     "Solano SBDC",
     "Contra Costa SBDC",
-    "Marin SBDC ",
+    "Marin SBDC",
     "Tech Futures Group"
   ],
   "Nevada": [
     "Sierra SBDC",
-    "Norcal SBDC Finance Center ",
+    "Norcal SBDC Finance Center",
     "Indian Dispute Resolution Services, Inc.",
     "Veterans Business Outreach Center",
     "California Capital Women's Business Center"
@@ -211,7 +211,7 @@
   ],
   "Placer": [
     "Sierra SBDC",
-    "Norcal SBDC Finance Center ",
+    "Norcal SBDC Finance Center",
     "Indian Dispute Resolution Services, Inc.",
     "Veterans Business Outreach Center",
     "California Capital Women's Business Center"
@@ -220,7 +220,7 @@
     "Butte College SBDC",
     "Sierra SBDC",
     "Shasta-Cascade SBDC",
-    "Norcal SBDC Finance Center ",
+    "Norcal SBDC Finance Center",
     "Veterans Business Outreach Center"
   ],
   "Riverside": [
@@ -259,9 +259,9 @@
     "North San Diego SBDC"
   ],
   "San Francisco": [
-    "Marin SBDC ",
+    "Marin SBDC",
     "San Francisco SBDC",
-    "Renaissance Women's Business Center ",
+    "Renaissance Women's Business Center",
     "Main Street Launch",
     "San Mateo SBDC"
   ],
@@ -277,25 +277,25 @@
     "Mission Community Services Corporation Women's Business Center",
     "Women's Economic Ventures Women's Business Center - Santa Barbara",
     "CSU Bakersfield SBDC",
-    "Fresno Area Hispanic Foundation "
+    "Fresno Area Hispanic Foundation"
   ],
   "San Mateo": [
     "San Mateo SBDC",
     "Alameda SBDC",
     "San Jose MBDA Business Center",
     "San Francisco SBDC",
-    "Renaissance Women's Business Center "
+    ""
   ],
   "Santa Barbara": [
     "Women's Economic Ventures Women's Business Center - Santa Barbara",
     "Women's Economic Ventures Women's Business Center - Ventura",
     "Mission Community Services Corporation Women's Business Center",
-    "Economic Development Collaboartive SBDC ",
+    "Economic Development Collaboartive SBDC",
     "Cal Poly CIE SBDC"
   ],
   "Santa Clara": [
     "Hispanic Satellite and Silicon Valley SBDC",
-    "AnewAmerica Women's Business Center - San Jose ",
+    "A New America Women's Business Center - San Jose",
     "San Jose MBDA Business Center",
     "Santa Cruz SBDC",
     "El Pajaro Community Development Corporation"
@@ -305,7 +305,7 @@
     "El Pajaro Community Development Corporation",
     "San Jose MBDA Business Center",
     "Hispanic Satellite and Silicon Valley SBDC",
-    "AnewAmerica Women's Business Center - San Jose "
+    "A New America Women's Business Center - San Jose"
   ],
   "Shasta": [
     "Shasta-Cascade SBDC",
@@ -317,7 +317,7 @@
   "Sierra": [
     "Sierra SBDC",
     "Butte College SBDC",
-    "Norcal SBDC Finance Center ",
+    "Norcal SBDC Finance Center",
     "Indian Dispute Resolution Services, Inc.",
     "Veterans Business Outreach Center"
   ],
@@ -337,10 +337,10 @@
   ],
   "Sonoma": [
     "Napa Sonoma SBDC",
-    "Marin SBDC ",
+    "Marin SBDC",
     "Solano SBDC",
     "Tech Futures Group",
-    "Renaissance Women's Business Center "
+    "Renaissance Women's Business Center"
   ],
   "Stanislaus": [
     "Valley Sierra SBDC",
@@ -354,7 +354,7 @@
     "Capital Region SBDC",
     "California Capital Women's Business Center",
     "Sacramento MBDA Export Center",
-    "Norcal SBDC Finance Center "
+    "Norcal SBDC Finance Center"
   ],
   "Tehama": [
     "Shasta-Cascade SBDC",
@@ -372,9 +372,9 @@
   ],
   "Tulare": [
     "CSU Bakersfield SBDC",
-    "Fresno Area Hispanic Foundation ",
+    "Fresno Area Hispanic Foundation",
     "Valley Community SBDC",
-    "San Joaquin Valley Rural Development Center ",
+    "San Joaquin Valley Rural Development Center",
     "Central CA SBDC Network"
   ],
   "Tuolumne": [
@@ -386,7 +386,7 @@
   ],
   "Ventura": [
     "Women's Economic Ventures Women's Business Center - Ventura",
-    "Economic Development Collaboartive SBDC ",
+    "Economic Development Collaboartive SBDC",
     "Women's Economic Ventures Women's Business Center - Santa Barbara",
     "New Economics for Women - Women's Business Center",
     "College of the Canyons SBDC"
@@ -400,7 +400,7 @@
   ],
   "Yuba": [
     "Butte College SBDC",
-    "Norcal SBDC Finance Center ",
+    "Norcal SBDC Finance Center",
     "Veterans Business Outreach Center",
     "California Capital Women's Business Center",
     "Capital Region SBDC"

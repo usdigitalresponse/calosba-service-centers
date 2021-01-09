@@ -10,8 +10,8 @@ return (
         INDEX
       </div>
       <div>
-        {props.eligiblePrograms.map(program => 
-          <div className="sidebar-item"><a href={`#${program.id}`}>{program.name}</a></div>
+        {props.centers.map(center => 
+          <div className="sidebar-item"><a href={`#${center.Id}`}>{center.CenterName}</a></div>
         )}
       </div>
     </div>

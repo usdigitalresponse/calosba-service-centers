@@ -1,15 +1,16 @@
 [
   {
-    "program": "ca_small_biz",
+    "centerId": "1",
+    "centerName": "Access Plus Capital",
     "rules": [
       {
         "op": "eq",
-        "qid": "ca_legal_business",
-        "value": "true"
+        "qid": "ca_services_county",
+        "value": "Alpine"
       },
       {
         "op": "eq",
-        "qid": "ca_employees",
+        "qid": "ca_services_languages",
         "value": "true"
       }
     ]

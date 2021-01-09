@@ -53,10 +53,9 @@ const Landing: React.FC = () => {
           <div className="row">
             <div className="col-md-6">
               <div>
-                <h1>Find technical assistance for your business</h1>
+                <h1>Find technical assistance for your small business</h1>
                 <p>
-                California supports a network of small business technical assistance centers that provide free one-on-one consulting and no-cost or low-cost trainings to help businesses get funded, enter new markets, strengthen operations, build resiliency and more. Additionally, there are nonprofit lenders who work with California to help you access state loan programs. With over 30 languages available, use this map to find your local center today or answer a few questions to find tailored services Interactive map. 
-                </p>
+                California supports a network of small business technical assistance centers that provide free one-on-one consulting and no-cost or low-cost trainings to help businesses get funded, enter new markets, strengthen operations, build resiliency and more. With over 30 languages available, use this tool to find your local center today and tailored services.                 </p>
                   <Link 
                     to="/questions"
                     role="button"
@@ -66,32 +65,6 @@ const Landing: React.FC = () => {
                   </Link>
 
               </div>
-              {/* <section>
-                <h2>Who is it for?</h2>
-                <p>This free tool is for U.S.-based businesses including:</p>
-                <ul>
-                  <li>Non-profits</li>
-                  <li>Tribal business concerns</li>
-                  <li>Self-employed individuals</li>
-                  <li>Contractors, freelancers, and gig workers</li>
-                  <li>Small business with fewer than 500 employees (including C Corp, S Corp, LLC)</li>
-                </ul>
-                <p>If you have more than 500 employees, check the <a className="link-in-text" href = "https://www.sba.gov/document/support--table-size-standards" target="_blank">
-                  Small Business Administration size standards </a> to find loans specific to your industry.</p>
-              </section> */}
-              <section id="government-partners">
-                <h2>Government partners</h2>
-                <p>
-                  To get a free tool built for your agency or to include your state's programs, please email the {" "}
-                  <a
-                    target="_blank"
-                    href="https://www.usdigitalresponse.org/requesthelp"
-                  >
-                    US Digital Response
-                  </a>
-                  .
-                </p>
-              </section>
             </div>
             <div className="col-md-6 d-none d-md-block">
               <img
