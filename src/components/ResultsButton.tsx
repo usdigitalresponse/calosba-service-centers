@@ -23,11 +23,8 @@ function evalRuleSet(values: Record<string, any>, ruleSet: Rule[]) {
   return ruleSet.every((rule) => {
     const { op, qid, value } = rule;
 
-    console.log(county_nearest_neighbors_data)
-
     const inputValue = values[qid];
     if (qid === 'ca_services_county') {
-      
       
     }
     if (inputValue === undefined) {

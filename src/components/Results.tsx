@@ -16,13 +16,15 @@ import "./index.scss";
 
 const Results: React.FC = () => {
   const { search } = useLocation();
-  const history = useHistory();
-  const [back, next, complete] = useFormDictionary("back", "next", "complete");
   const [windowWidth, setWindowWidth] = useState(0);
 
   const updateDimensions = () => {
     let windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
     setWindowWidth(windowWidth);
+  }
+
+  const handleMarkerClick = (centerId) => {
+    window.location.replace(`#${centerId}`)
   }
 
   const renderLeafletMap = (centers) => {
@@ -39,7 +41,7 @@ const Results: React.FC = () => {
 
     filteredCenters.forEach(center => {
       let latLongTuple = [center.Latitude, center.Longitude]
-      L.marker(latLongTuple).addTo(map)
+      L.marker(latLongTuple).bindTooltip(center.CenterName, {permanent: false, className: "my-label", offset: [0, 0] }).addTo(map).on('click', () => {handleMarkerClick(center.Id)});
     })
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

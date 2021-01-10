@@ -15,7 +15,6 @@ const findActualCenterId = (centerName) => {
 }
 
 const transform = () => {
-  // console.log(JSON.stringify(json_data, null, 2))
   let new_data = {};
   for (const key in json_data) {
     let county = key;
@@ -24,7 +23,6 @@ const transform = () => {
     matches.forEach(centerName => {
       let actualCenterId = findActualCenterId(centerName);
       if (!actualCenterId) {
-        console.log(centerName)
       } else {
         let newCounty = {};
         newCounty.Id = actualCenterId;
@@ -35,7 +33,6 @@ const transform = () => {
     new_data[county] = newMatches
   }
   let data = JSON.stringify(new_data, null, 2);
-  console.log(data)
   fs.writeFileSync('count_nearest_neighbors_2.json', data);
 }
 
@@ -58,10 +55,7 @@ const getAllLanguages = () => {
     }
   })
 
-  // console.log(finalForQuestions)
-
   let data = JSON.stringify(finalForQuestions, null, 2);
-  console.log(data);
   // fs.writeFileSync('languages.json', data);
 }
 
@@ -78,7 +72,7 @@ const transformCenters = () => {
     })
     center.AreasOfService = areasOfService;
   })
-  
+
 
   // let data = JSON.stringify(centersData, null, 2);
   // fs.writeFileSync('centers2.json', data);
