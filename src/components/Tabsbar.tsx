@@ -3,28 +3,28 @@ import React, { useEffect , useState} from "react";
 
 import "./results.scss";
 
-const Tabsbar: React.FC = (props) => {
-  const [activeTab, setActiveTab] = useState('ppp');
+const Tabsbar: React.FC<TabsbarProps> = ({eligibleCenters}) => {
+  const [activeTab, setActiveTab] = useState('');
 
   return (
     <nav id="mobile-tabsbar-container">
       <div className="tabsbar">
-        {props.results.map(center => {
-          return center.Id === activeTab ? 
+        {eligibleCenters.map(center => {
+          return center.id === activeTab ? 
             (
               <span className="tab-item current">
-                <a className="tab-link current" href={`#${center.Id}`}><strong>{center.CenterName}</strong></a>
+                <a className="tab-link current" href={`#${center.id}`}><strong>{center.name}</strong></a>
               </span>
             ) : (
               <span className="tab-item">
                 <a 
                   className="tab-link" 
-                  href={`#${center.Id}`}
+                  href={`#${center.id}`}
                   onClick={() => {
-                    setActiveTab(center.Id)
+                    setActiveTab(center.id)
                   }}
                 >
-                    {center.CenterName}
+                    {center.name}
                 </a>
               </span>
             )
@@ -32,6 +32,10 @@ const Tabsbar: React.FC = (props) => {
       </div>
     </nav>
   )
+}
+
+type TabsbarProps = {
+  eligibleCenters: Center[]
 }
 
 export default Tabsbar;

@@ -1,7 +1,6 @@
-// @ts-nocheck
-
 import React, { useEffect , useState} from "react";
-import { useLocation, useHistory } from "react-router-dom";
+import * as L from 'leaflet';
+import { useLocation } from "react-router-dom";
 import ResultsList from './ResultsList'
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,65 +9,56 @@ import Tabsbar from "./Tabsbar";
 import { Helmet } from "react-helmet";
 import { useFormDictionary, useForm } from "~/contexts/form";
 import centers_data from "./../data/centers.json";
+import {Center} from "./../types";
 
 import "./results.scss";
 import "./index.scss";
 
 const Results: React.FC = () => {
   const { search } = useLocation();
-  const [windowWidth, setWindowWidth] = useState(0);
-
-  const updateDimensions = () => {
-    let windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
-    setWindowWidth(windowWidth);
-  }
-
-  const handleMarkerClick = (centerId) => {
+  const [eligibleCenters, setEligibleCenters] = useState<Center[]>([])
+  const allCenters = JSON.parse(JSON.stringify(centers_data));
+ 
+  const handleMarkerClick = (centerId: number): void => {
     window.location.replace(`#${centerId}`)
   }
 
-  const renderLeafletMap = (centers) => {
-    const idsFromQuery = new URLSearchParams(search).getAll("eligible");
-    const eligibleResultIds = idsFromQuery.map(id => parseInt(id))
-    const filteredCenters = centers_data.filter(center => {
-      return eligibleResultIds.includes(center.Id)
-    })
-    let initialLatLong = [36.7, -119]
-    if (filteredCenters[0]) {
-      initialLatLong = [filteredCenters[0]?.Latitude, [filteredCenters[0]?.Longitude]]
+  const renderLeafletMap = (eligibleCenters: Center[] = []): void => {
+    if (!eligibleCenters.length) {
+      return;
     }
-    var map = L.map('mapid').setView(initialLatLong, 7);
+    const latLngs = eligibleCenters.map(center => L.latLng(center.latitude, center.longitude));
+    const bounds = L.latLngBounds(latLngs);
+    const map = L.map('mapid').fitBounds(bounds, {padding: [20, 20]});
 
-    filteredCenters.forEach(center => {
-      let latLongTuple = [center.Latitude, center.Longitude]
-      L.marker(latLongTuple).bindTooltip(center.CenterName, {permanent: false, className: "my-label", offset: [0, 0] }).addTo(map).on('click', () => {handleMarkerClick(center.Id)});
-    })
-
+    // render map tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+
+    // render marker for each center
+    eligibleCenters.forEach(center => {
+      let latLongTuple = new L.LatLng(center.latitude, center.longitude);
+      L.marker(latLongTuple).bindTooltip(center.name, {permanent: false, className: "my-label", offset: [0, 0] }).addTo(map).on('click', () => {handleMarkerClick(center.id)});
+    })
   }
 
-  useEffect(() => {
-    updateDimensions();
-    window.addEventListener("resize", updateDimensions);
-    const idsFromQuery = new URLSearchParams(search).getAll("eligible");
-    if (idsFromQuery) {
-      renderLeafletMap();
+  useEffect(() => {    
+    // get result ids from query params:
+    const idsFromQuery: number[] = new URLSearchParams(search).getAll("eligible").map(string => parseInt(string));
+    if (idsFromQuery.length) {
+      let eligibleCenters: Center[] = [];
+      allCenters.forEach(((center: Center) => {
+        if (idsFromQuery.includes(center.id)) {
+          eligibleCenters.push(center);
+        }
+      }));
+      setEligibleCenters(eligibleCenters);
+      renderLeafletMap(eligibleCenters);
     }
   }, []);
 
-  // const {
-  //   form: { results },
-  // } = useForm();
-
-  // hacky port of raw js from previous results page, will redo with the new results page
-  const idsFromQuery = new URLSearchParams(search).getAll("eligible");
-  const eligibleResultIds = idsFromQuery.map(id => parseInt(id))
-  const filteredCenters = centers_data.filter(center => {
-    return eligibleResultIds.includes(center.Id)
-  })
   return (
     <div className="content-page">
     <Helmet>
@@ -77,7 +67,7 @@ const Results: React.FC = () => {
         property="og:description"
         content="Learn about support programs available to help stabilize your business."
       />
-      <title>COVID-19 SMB Loan Information</title>
+      <title>CalOSBA Technical Assistance Centers</title>
       <meta
         name="Description"
         content="Learn about support programs available to help stabilize your business."
@@ -96,17 +86,17 @@ const Results: React.FC = () => {
             </p>
             <div className="tabsbar-container">
               <Tabsbar
-                  results={filteredCenters}
+                  eligibleCenters={eligibleCenters}
                 />
             </div>
             <div id="mapid"></div>
             <ResultsList
-              results={filteredCenters}
+              eligibleCenters={eligibleCenters}
             />
           </div>
           <div className="col-md-4">
             <Sidebar
-              centers={filteredCenters}
+              eligibleCenters={eligibleCenters}
             />
           </div>
         </div>

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "~/components/uswds-components";
 import { useForm, useFormDictionary } from "../contexts/form";
 import rules from "../data/rules.json";
+import centers_data from "./../data/centers.json";
 import county_nearest_neighbors_data from "./../data/count_nearest_neighbors.json";
 import assert from "assert";
 

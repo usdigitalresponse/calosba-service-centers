@@ -72,13 +72,70 @@ const transformCenters = () => {
     })
     center.AreasOfService = areasOfService;
   })
-
-
-  // let data = JSON.stringify(centersData, null, 2);
-  // fs.writeFileSync('centers2.json', data);
 }
 
-transformCenters();
+const centerSchemaArray = [
+  'id',
+  'name',
+  'languages',
+  'geographicAreas',
+  'hasStatewideService',
+  'specificCommunities',
+  'areasOfService',
+  'streetAddress',
+  'city',
+  'county',
+  'zipCode',
+  'fullAddress',
+  'latitude',
+  'longitude',
+  'email',
+  'website',
+  'phoneNumber',
+  'socialMedia'
+]
+
+const transformCentersToTSSchema = () => {
+  let final = [];
+  let centersData = centers_data;
+  centersData.forEach(center => {
+    let newCenter = {};
+    for (const key in center) {
+      newCenter[key] = center[key]
+      if (key === 'hasStatewideService') {
+        if (newCenter[key] === '') {
+          newCenter[key] = false;
+        } else if (newCenter[key] === 'Yes') {
+          newCenter[key] = true;
+        }
+      } 
+    }
+    final.push(newCenter)
+  })
+  let data = JSON.stringify(final, null, 2);
+  fs.writeFileSync('centers3.json', data);
+}
+
+const findCentersWithMissingData = () => {
+  let centersData = centers_data;
+  centersData.forEach(center => {
+    for (const key in center) {
+      if (key === 'latitude' && center[key] === '') {
+        console.log(center);
+        break;
+      }
+    }
+  })
+}
+
+findCentersWithMissingData();
+// transformCentersToTSSchema();
+
+//   let data = JSON.stringify(centersData, null, 2);
+//   fs.writeFileSync('centers2.json', data);
+
+
+// transformCenters();
 
 // getAllLanguages();
-// transform();
+// transform()

@@ -1,21 +1,23 @@
 // @ts-nocheck
+
 import React, { useEffect } from "react";
+import {Center} from './../types';
 
 import "./form-style.scss";
 import "./results.scss";
 
-const ResultsList: React.FC = (props) => props.results.map((center, i) => {
+const ResultsList: React.FC<resultsListProps> = ({eligibleCenters}) => eligibleCenters.map((center, i) => {
   return (
-    <div id={center.Id} className="loan-container">
-      <a name={center.Id}></a>
+    <div id={center.id} className="loan-container">
+      <a name={center.id}></a>
       {/* <label className="top-label">
         {program.address}
       </label> */}
       <h2 className="title">
-        {center.CenterName}
+        {center.name}
       </h2>
       <p className="loan-description">
-        <strong>Address: </strong><span>{center.full_address}</span>
+        <strong>Address: </strong><span>{center.fullAddress}</span>
       </p>
       <p>
       </p>
@@ -23,7 +25,7 @@ const ResultsList: React.FC = (props) => props.results.map((center, i) => {
         <strong>Languages</strong>
       </p>
       <p>
-        {center.Languages.map(lang => {
+        {center.languages.map(lang => {
           return <li>{lang}</li>
         })}
       </p>
@@ -31,7 +33,7 @@ const ResultsList: React.FC = (props) => props.results.map((center, i) => {
         <strong>Services Offered</strong>
       </p>
       <p>
-        {center.AreasOfService.map(area => {
+        {center.areasOfService.map(area => {
           return <li>{area}</li>
         })}
       </p>
@@ -39,7 +41,7 @@ const ResultsList: React.FC = (props) => props.results.map((center, i) => {
         className="usa-button"
         onClick={(e) => {
           e.preventDefault();
-          window.open(center.Website, '_blank')
+          window.open(center.website, '_blank')
           }}
         type="button"
         href="#"
@@ -49,5 +51,9 @@ const ResultsList: React.FC = (props) => props.results.map((center, i) => {
     </div>
   )
 });
+
+type resultsListProps = {
+  eligibleCenters: Center[]
+}
 
 export default ResultsList;

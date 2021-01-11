@@ -20,6 +20,7 @@ interface Props {
 
 const Header: React.FC<Props> = ({ links = [], showLanguageSelect }) => {
   const [language, setLanguage, languageOpts] = useSelectLanguage();
+  showLanguageSelect = false;
   return (
     <div className="container">
       <nav className="navbar">
