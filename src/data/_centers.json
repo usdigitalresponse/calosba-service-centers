@@ -9,7 +9,7 @@
       "Punjabi"
     ],
     "geographicAreas": "Fresno, Kern, Kings, Madera, Merced, San Benito, Stanislaus, Tulare",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -24,8 +24,8 @@
     "county": "Fresno",
     "zipCode": 93721,
     "fullAddress": "1920 Mariposa St. Fresno, CA, 93721",
-    "latitude": 36.73441,
-    "longitude": -119.7918,
+    "latitude": 36.734410,
+    "longitude": -119.791800,
     "email": "Loans@acccesspluscapital.com",
     "website": "https://www.accesspluscapital.com",
     "phoneNumber": "(559) 263-1351",
@@ -39,7 +39,7 @@
       "English"
     ],
     "geographicAreas": "Monterey, San Benito, Santa Cruz",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "Trainings or Webinars",
@@ -51,8 +51,8 @@
     "county": "Monterey",
     "zipCode": 93908,
     "fullAddress": "1700 Old Stage Rd. Salinas, CA, 93908",
-    "latitude": 36.60947,
-    "longitude": -121.53437,
+    "latitude": 36.609470,
+    "longitude": -121.534370,
     "email": "info@albafarmers.org",
     "website": "https://www.albafarmers.org",
     "phoneNumber": "(831) 758-1469",
@@ -72,7 +72,7 @@
       "American Sign"
     ],
     "geographicAreas": "Alameda",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -116,7 +116,7 @@
       "Taiwanese"
     ],
     "geographicAreas": "San Diego",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -146,7 +146,7 @@
       "English"
     ],
     "geographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Imperial, Inyo, Kern, Kings, Klamath, Lake, Lassen, Los Angeles, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Orange, Placer, Plumas, Riverside, Sacramento, San Benito, San Bernardino, San Diego, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Barbara, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Ventura, Yolo, Yuba",
-    "hasStatewideService": true,
+    "hasStatewideService": "Yes",
     "specificCommunities": "Native American",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -176,7 +176,7 @@
       "English"
     ],
     "geographicAreas": "Alameda",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -207,7 +207,7 @@
       "English"
     ],
     "geographicAreas": "Santa Clara",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -242,7 +242,7 @@
       "Portuguese"
     ],
     "geographicAreas": "Los Angeles, Santa Barbara, Ventura",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -279,7 +279,7 @@
       "English"
     ],
     "geographicAreas": "Butte, Glenn, Tehama",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -315,7 +315,7 @@
       "English"
     ],
     "geographicAreas": "Monterey, San Benito",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -351,7 +351,7 @@
       "English"
     ],
     "geographicAreas": "",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -387,7 +387,7 @@
       "English"
     ],
     "geographicAreas": "El Dorado, Nevada, Placer, Sacramento, San Joaquin, Sutter, Yolo, Yuba",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -421,7 +421,7 @@
       "Spanish"
     ],
     "geographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Imperial, Inyo, Kern, Kings, Klamath, Lake, Lassen, Los Angeles, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Orange, Placer, Plumas, Riverside, Sacramento, San Benito, San Bernardino, San Diego, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Barbara, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Ventura, Yolo, Yuba",
-    "hasStatewideService": true,
+    "hasStatewideService": "Yes",
     "specificCommunities": "Manufacturing",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -455,7 +455,7 @@
       "Punjabi"
     ],
     "geographicAreas": "Sacramento, Yolo, Yuba, Sutter, Colusa, El Dorado, and Placer",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -496,7 +496,7 @@
       "Portuguese"
     ],
     "geographicAreas": "Stanislaus, Tuolomne, Mariposa, Merced, Madera, Fresno, Tulare, Kings, Kern, Inyo, Mono, San Luis Obispo, San Benito, Monterey",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -533,7 +533,7 @@
       "English"
     ],
     "geographicAreas": "Riverside, San Bernardino",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -550,8 +550,8 @@
     "county": "Riverside",
     "zipCode": 92201,
     "fullAddress": "44-199 Monroe Street, Coachella, CA, 92201",
-    "latitude": 33.73323,
-    "longitude": -116.23373,
+    "latitude": 33.733230,
+    "longitude": -116.233730,
     "email": "cvsmallbusiness@ociesbdc.com",
     "website": "ociesmallbusiness.org",
     "phoneNumber": "(760) 848-4096",
@@ -565,7 +565,7 @@
       "English"
     ],
     "geographicAreas": "Riverside",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -606,7 +606,7 @@
       "Gujarati"
     ],
     "geographicAreas": "Los Angeles",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -640,7 +640,7 @@
       "English"
     ],
     "geographicAreas": "San Diego",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -677,7 +677,7 @@
       "French"
     ],
     "geographicAreas": "Contra Costa",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -715,7 +715,7 @@
       "English"
     ],
     "geographicAreas": "Kern, Inyo, Mono",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -752,7 +752,7 @@
       "English"
     ],
     "geographicAreas": "San Diego",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -791,7 +791,7 @@
       "French"
     ],
     "geographicAreas": "Ventura, Santa Barbara",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -932,7 +932,7 @@
       "Japanese"
     ],
     "geographicAreas": "San Diego",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -959,7 +959,7 @@
       "English"
     ],
     "geographicAreas": "Fresno, Kern, Kings, Madera, Merced, San Joaquin, Stanislaus, Tulare",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -996,7 +996,7 @@
       "Portuguese"
     ],
     "geographicAreas": "Santa Clara",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1029,7 +1029,7 @@
       "English"
     ],
     "geographicAreas": "Imperial",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1064,7 +1064,7 @@
       "English"
     ],
     "geographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Imperial, Inyo, Kern, Kings, Klamath, Lake, Lassen, Los Angeles, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Orange, Placer, Plumas, Riverside, Sacramento, San Benito, San Bernardino, San Diego, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Barbara, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Ventura, Yolo, Yuba",
-    "hasStatewideService": true,
+    "hasStatewideService": "Yes",
     "specificCommunities": "Native American",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1094,7 +1094,7 @@
       "English"
     ],
     "geographicAreas": "Riverside, San Bernardino",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1127,7 +1127,7 @@
       "English"
     ],
     "geographicAreas": "Riverside, San Bernardino",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1166,7 +1166,7 @@
       "Congo"
     ],
     "geographicAreas": "San Diego",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1196,7 +1196,7 @@
       "English"
     ],
     "geographicAreas": "Los Angeles",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1223,7 +1223,7 @@
       "English"
     ],
     "geographicAreas": "Orange and Inland Empire",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1252,7 +1252,7 @@
       "English"
     ],
     "geographicAreas": "Los Angeles",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1293,7 +1293,7 @@
       "French"
     ],
     "geographicAreas": "Los Angeles, Santa Barbara, Ventura",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1336,7 +1336,7 @@
       "Khmer"
     ],
     "geographicAreas": "Los Angeles",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1372,7 +1372,7 @@
       "English"
     ],
     "geographicAreas": "Alameda, San Francisco, San Joaquin",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1399,7 +1399,7 @@
       "French"
     ],
     "geographicAreas": "Marin",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1434,7 +1434,7 @@
       "Spanish"
     ],
     "geographicAreas": "Mendocino",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1468,7 +1468,7 @@
       "English"
     ],
     "geographicAreas": "Kern, Monterey, San Luis Obispo",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1503,7 +1503,7 @@
       "English"
     ],
     "geographicAreas": "Napa, Sonoma",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1539,7 +1539,7 @@
       "Russian"
     ],
     "geographicAreas": "Los Angeles",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1572,7 +1572,7 @@
       "Tagalog"
     ],
     "geographicAreas": "Alameda, Contra Costa, Del Norte, Humboldt, Marin, Mendocino, Napa, San Francisco, San Mateo, Santa Clara, Shasta, Siskiyou, Solano, Sonoma, Trinity",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1606,7 +1606,7 @@
       "French"
     ],
     "geographicAreas": "",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1656,7 +1656,7 @@
       "French"
     ],
     "geographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Glenn, Humboldt, Lake, Lassen, Marin, Mendocino, Modoc, Napa, Nevada, Placer, Plumas, Sacramento, San Francisco, San Joaquin, San Mateo, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Sutter, Tehama, Trinity, Yolo, Yuba",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1694,7 +1694,7 @@
       "Hindi"
     ],
     "geographicAreas": "San Diego",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1731,7 +1731,7 @@
       "English"
     ],
     "geographicAreas": "Orange, Riverside, San Bernardino",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1767,7 +1767,7 @@
       "French"
     ],
     "geographicAreas": "Orange, Riverside, San Bernardino",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1809,7 +1809,7 @@
       "French"
     ],
     "geographicAreas": "Los Angeles",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1856,7 +1856,7 @@
       "French"
     ],
     "geographicAreas": "Imperial, Los Angeles, Orange, Riverside, San Bernardino, San Diego, Ventura",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1894,7 +1894,7 @@
       "English"
     ],
     "geographicAreas": "Los Angeles",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1913,7 +1913,7 @@
     "zipCode": 90010,
     "fullAddress": "",
     "latitude": 34.062321,
-    "longitude": -118.29319,
+    "longitude": -118.293190,
     "email": "info@pcrsbdc.org",
     "website": "https://pcrsbdc.org/",
     "phoneNumber": "(213) 674-2696",
@@ -1927,7 +1927,7 @@
       "English"
     ],
     "geographicAreas": "Los Angeles",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1947,8 +1947,8 @@
     "county": "Los Angeles",
     "zipCode": 91107,
     "fullAddress": "3035 E. Foothill Blvd., Room 122 Pasadena, CA 91107",
-    "latitude": 34.15087,
-    "longitude": -118.08624,
+    "latitude": 34.150870,
+    "longitude": -118.086240,
     "email": "sbdc@pasadena.edu",
     "website": "www.pccsbdc.org",
     "phoneNumber": "(626) 585-3105",
@@ -1964,7 +1964,7 @@
       "Korean"
     ],
     "geographicAreas": "Los Angeles",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Minority / Person of Color",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -1996,7 +1996,7 @@
       "English"
     ],
     "geographicAreas": "Orange",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2025,7 +2025,7 @@
       "Spanish"
     ],
     "geographicAreas": "San Francisco",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2055,7 +2055,7 @@
       "English"
     ],
     "geographicAreas": "",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2086,7 +2086,7 @@
       "English"
     ],
     "geographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Imperial, Inyo, Kern, Kings, Klamath, Lake, Lassen, Los Angeles, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Orange, Placer, Plumas, Riverside, Sacramento, San Benito, San Bernardino, San Diego, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Barbara, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Ventura, Yolo, Yuba",
-    "hasStatewideService": true,
+    "hasStatewideService": "Yes",
     "specificCommunities": "Minority / Person of Color",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2132,7 +2132,7 @@
       "French"
     ],
     "geographicAreas": "Imperial, San Diego",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2169,7 +2169,7 @@
       "English"
     ],
     "geographicAreas": "Imperial, San Diego",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2199,7 +2199,7 @@
       "English"
     ],
     "geographicAreas": "Imperial, Orange, San Diego",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2232,7 +2232,7 @@
       "French"
     ],
     "geographicAreas": "San Francisco",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2265,7 +2265,7 @@
       "English"
     ],
     "geographicAreas": "San Joaquin, Calaveras, Amador, Alpine",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2297,7 +2297,7 @@
       "English"
     ],
     "geographicAreas": "Fresno, Kern, Kings, Madera, Merced, San Joaquin, Stanislaus, Tulare",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2334,7 +2334,7 @@
       "Hindi"
     ],
     "geographicAreas": "Alameda, Contra Costa, Fresno, Kern, Kings, Madera, Marin, Mariposa, Merced, Monterey, Napa, San Benito, San Francisco, San Mateo, Santa Clara, Santa Cruz, Solano, Sonoma, Tulare",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Minority / Person of Color",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2375,7 +2375,7 @@
       "French"
     ],
     "geographicAreas": "San Mateo",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2412,7 +2412,7 @@
       "English"
     ],
     "geographicAreas": "Santa Cruz",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2451,7 +2451,7 @@
       "Punjabi"
     ],
     "geographicAreas": "Shasta, Trinity",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2488,7 +2488,7 @@
       "English"
     ],
     "geographicAreas": "Nevada, Placer, El Dorado, Modoc, Sierra, Plumas, Lassen",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2521,7 +2521,7 @@
       "English"
     ],
     "geographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Imperial, Inyo, Kern, Kings, Klamath, Lake, Lassen, Los Angeles, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Orange, Placer, Plumas, Riverside, Sacramento, San Benito, San Bernardino, San Diego, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Barbara, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Ventura, Yolo, Yuba",
-    "hasStatewideService": true,
+    "hasStatewideService": "Yes",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2554,7 +2554,7 @@
       "Tagalog"
     ],
     "geographicAreas": "Solano",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2589,7 +2589,7 @@
       "Spanish"
     ],
     "geographicAreas": "San Diego",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2624,7 +2624,7 @@
       "English"
     ],
     "geographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Glenn, Humboldt, Lake, Lassen, Marin, Mendocino, Modoc, Napa, Nevada, Placer, Plumas, Sacramento, San Francisco, San Joaquin, San Mateo, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Sutter, Tehama, Trinity, Yolo, Yuba",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2658,7 +2658,7 @@
       "English"
     ],
     "geographicAreas": "San Diego, Imperial",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2688,7 +2688,7 @@
       "English"
     ],
     "geographicAreas": "Stanislaus, Tuolomne, Mariposa, Merced, Madera, Fresno, Tulare, Kings, Kern, Inyo, Mono, San Luis Obispo, San Benito, Monterey",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2724,7 +2724,7 @@
       "English"
     ],
     "geographicAreas": "Orange",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2754,7 +2754,7 @@
       "English"
     ],
     "geographicAreas": "Los Angeles",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2791,7 +2791,7 @@
       "Punjabi"
     ],
     "geographicAreas": "Fresno, Madera, Tulare, Kings",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2823,7 +2823,7 @@
       "Spanish"
     ],
     "geographicAreas": "Stanislaus and Tuolomne",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2860,7 +2860,7 @@
       "Russian"
     ],
     "geographicAreas": "Alameda, Alpine, Amador, Butte, Calaveras, Colusa, Contra Costa, Del Norte, El Dorado, Fresno, Glenn, Humboldt, Inyo, Kern, Kings, Klamath, Lake, Lassen, Madera, Marin, Mariposa, Mendocino, Merced, Modoc, Mono, Monterey, Napa, Nevada, Placer, Plumas, Sacramento, San Francisco, San Joaquin, San Luis Obispo, San Mateo, Santa Clara, Santa Cruz, Shasta, Sierra, Siskiyou, Solano, Sonoma, Stanislaus, Sutter, Tehama, Trinity, Tulare, Tuolumne, Yolo, Yuba",
-    "hasStatewideService": true,
+    "hasStatewideService": "Yes",
     "specificCommunities": "Veteran",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2893,7 +2893,7 @@
       "English"
     ],
     "geographicAreas": "Siskiyou",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2926,7 +2926,7 @@
       "English"
     ],
     "geographicAreas": "Santa Barbara",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",
@@ -2959,7 +2959,7 @@
       "English"
     ],
     "geographicAreas": "Ventura",
-    "hasStatewideService": false,
+    "hasStatewideService": "",
     "specificCommunities": "Women",
     "areasOfService": [
       "1-1 Consulting / Training Offerings",

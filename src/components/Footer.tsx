@@ -8,7 +8,8 @@ const Footer: React.FC = () => (
       <div className="row">
         <div className="col">
           <img src="/osba_logo_light.png" alt="USDR Logo" />
-          This network is funded in part by a grant from the State of California
+          Office of the Small Business Advocate (CalOSBA)
+            Governor’s Office of Business and Economic Development (GO-Biz)
         </div>
       </div>
       <div className="row">
@@ -18,16 +19,38 @@ const Footer: React.FC = () => (
             <a target="_blank" href="https://twitter.com/CaliforniaOSBA">
               @CaliforniaOSBA
             </a>
-            <img src="/twitter_logo.png" alt="Twitter logo" />
-            <a target="_blank" href="https://twitter.com/CaliforniaOSBA">
+          </p>
+          <p>
+          <img src="/instagram_logo.jpeg" alt="Instagram logo" />
+            <a target="_blank" href="https://instagram.com/CaliforniaOSBA">
               @CaliforniaOSBA
             </a>
           </p>
-          <p className="d-inline">
-            <a href="mailto:info@usdigitalresponse.org">
-              info@usdigitalresponse.org
+          <div className="footer-email">
+            Submit an email request at <a target="_blank" href="https://business.ca.gov/zendesk">
+            business.ca.gov/zendesk
             </a>
+          </div>
+        </div>
+        <div className="col">
+          <p className="d-inline">
+            <div>
+                     This network is funded in part by a grant from the State of California
+
+            </div>
           </p>
+          <p className="d-inline">
+            <div>
+          1325 J Street, Suite 1800
+          Sacramento, CA 95814
+          </div>
+          </p>
+          <p className="d-inline">
+            <div>
+          1-877-345-4633
+          </div>
+          </p>
+
         </div>
       </div>
     </div>

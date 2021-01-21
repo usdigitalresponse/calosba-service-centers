@@ -17,25 +17,20 @@ const ResultsList: React.FC<resultsListProps> = ({eligibleCenters}) => eligibleC
         {center.name}
       </h2>
       <p className="loan-description">
-        <strong>Address: </strong><span>{center.fullAddress}</span>
+        <strong>Address: </strong><p>{center.fullAddress}</p>
       </p>
       <p>
       </p>
       <p className="loan-description">
-        <strong>Languages</strong>
-      </p>
-      <p>
-        {center.languages.map(lang => {
-          return <li>{lang}</li>
-        })}
+        <strong>Languages: </strong> <p>{center.languages.join(', ')}</p>
       </p>
       <p className="loan-description">
-        <strong>Services Offered</strong>
-      </p>
-      <p>
-        {center.areasOfService.map(area => {
-          return <li>{area}</li>
-        })}
+        <strong>Services Offered:</strong> 
+        <p className="services-list">
+          {center.areasOfService.map(area => {
+            return <li>{area}</li>
+          })}
+        </p>
       </p>
       <a
         className="usa-button"
