@@ -48,7 +48,7 @@ const ResultsList: React.FC<resultsListProps> = ({eligibleCenters}) => eligibleC
         className="usa-button"
         onClick={(e) => {
           e.preventDefault();
-          window.open(center.website, '_blank')
+          window.open(`https://${center.website}`, '_blank')
           }}
         type="button"
         href="#"

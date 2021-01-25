@@ -1,4 +1,4 @@
-const json_data = require('../src/data/orig_county_nearest_neighbors.json');
+// const json_data = require('../src/data/orig_county_nearest_neighbors.json');
 const centers_data = require('../src/data/centers.json');
 const nearest1 = require('./../src/data/count_nearest_neighbors.json')
 const nearest2 = require('./../src/data/count_nearest_neighbors2.json');
@@ -256,7 +256,23 @@ const mapAreasAndCommunities = () => {
   fs.writeFileSync('centers2.json', result);
 }
 
-mapAreasAndCommunities();
+const cleanUpLinks = () => {
+  let centers = centers_data;
+  let final = [];
+
+  centers.forEach(center => {
+    let url = center.website;
+    if (!url.includes('https://')) {
+      center.website = `https://${center.website}`;
+    }
+    final.push(center)
+  })
+  let result = JSON.stringify(centers, null, 2);
+  fs.writeFileSync('centers2.json', result);
+}
+
+cleanUpLinks();
+// mapAreasAndCommunities();
 
 // findCommunities();
 // transformAreasOfService();

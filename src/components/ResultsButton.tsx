@@ -59,7 +59,7 @@ const centerIncludesSelection = (centerValues: [], selectedValues: []): boolean 
     }
   }
 
-  // if selected is 0, we let all pass
+  // if selected is 0, "Other" -> skip this filter and let all pass
   if (selectedValues.includes(0)) {
     return true;
   }

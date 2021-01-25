@@ -31,18 +31,11 @@ const Footer: React.FC = () => (
               @CaliforniaOSBA
             </a>
           </div>
-          <div className="footer-email">
-            Submit an email request at <a target="_blank" href="https://business.ca.gov/zendesk">
-            business.ca.gov/zendesk
-            </a>
+          <div className="footer-post-script">
+            This network is funded in part by a grant from the State of California
           </div>
         </div>
         <div className="col">
-          <p className="d-inline">
-            <div>
-              This network is funded in part by a grant from the State of California
-            </div>
-          </p>
           <p className="d-inline">
             <div>
           1325 J Street, Suite 1800
@@ -52,8 +45,13 @@ const Footer: React.FC = () => (
           <p className="d-inline">
             <div>
           1-877-345-4633
-          </div>
+            </div>
           </p>
+            <div>
+              Submit an email request at <a target="_blank" href="https://business.ca.gov/zendesk">
+              business.ca.gov/zendesk
+              </a>
+          </div>
 
         </div>
       </div>
