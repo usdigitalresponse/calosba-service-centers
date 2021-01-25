@@ -1,9 +1,9 @@
 const json_data = require('../src/data/orig_county_nearest_neighbors.json');
 const centers_data = require('../src/data/centers.json');
-const languages_data = require('./languages.json');
 const nearest1 = require('./../src/data/count_nearest_neighbors.json')
-const nearest2 = require('./../src/data/count_nearest_neighbors2.json')
-
+const nearest2 = require('./../src/data/count_nearest_neighbors2.json');
+const areas_of_service = require('../src/data/areas_of_service.json');
+const specific_communities = require('../src/data/specific_communities.json');
 
 const fs = require('fs');
 
@@ -171,11 +171,96 @@ const getAreasOfService = () => {
     })
   })
 
-  let result = JSON.stringify(final, null, 2);
-  fs.writeFileSync('areasOfService.json');
+  let array = Object.keys(final);
+  let finalArray = []
+
+  array.forEach(area => {
+    let newObj = {};
+    newObj.id = count;
+    newObj.name = area;
+    finalArray.push(newObj);
+  })
+
+  console.log(finalArray);
+
+  let result = JSON.stringify(array, null, 2);
+  // fs.writeFileSync('areasOfService.json', result);
 }
 
-getAreasOfService();
+const transformAreasOfService = () => {
+  let count = 1;
+  const areas = areas_of_service;
+  const final = [];
+  areas.forEach(area => {
+    let newObj = {};
+    newObj.id = count++;
+    newObj.name = area
+    final.push(newObj)
+  })
+  console.log(final);
+  let result = JSON.stringify(final, null, 2);
+  fs.writeFileSync('areasOfService2.json', result);
+}
+
+const findCommunities = () => {
+  const centers = centers_data;
+  const communitiesHash = {};
+
+  centers.forEach(center => {
+    if (center.specificCommunities) {
+      communitiesHash[center.specificCommunities] = true;
+    }
+  })
+
+  const communitiesFinal = [];
+  let count = 1;
+  Object.keys(communitiesHash).forEach(community => {
+  
+    let commObj = {
+      id: count++,
+      name: community
+    }
+    console.log(commObj);
+    communitiesFinal.push(commObj);
+  })
+  let result = JSON.stringify(communitiesFinal, null, 2);
+  fs.writeFileSync('specificCommunities.json', result);
+}
+
+const mapAreasAndCommunities = () => {
+  let centers = centers_data;
+  let areasData = areas_of_service;
+  let communitiesData = specific_communities;
+
+  let finalCenters = [];
+
+  centers.forEach(center => {
+    if (center.areasOfService.length) {
+      let newAreas = [];
+      center.areasOfService.forEach(area => {
+        let found = areasData.find(areaObj => areaObj.name === area);
+        newAreas.push(found.id)
+      })
+      center.areasOfService = newAreas
+    } 
+
+    let newCommunities = [];
+    if (center.specificCommunities) {
+      let found = communitiesData.find(communityObj => communityObj.name === center.specificCommunities);
+      newCommunities.push(found.id);
+    }
+    center.specificCommunities = newCommunities;
+  })
+
+  let result = JSON.stringify(centers, null, 2);
+  fs.writeFileSync('centers2.json', result);
+}
+
+mapAreasAndCommunities();
+
+// findCommunities();
+// transformAreasOfService();
+// getAreasOfService();
 // setStateWideServiceBools();
 
 // generateNewNearestNeighbors();
