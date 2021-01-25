@@ -48,27 +48,6 @@ const FormApp: React.FC<Props> = (props) => {
   } = useForm();
   
   let filteredQuestions = questions;
-  
-  if (!ca && !pitt && !hawaii) {
-    // This is a temporary fix until we flush out branching better
-    filteredQuestions = filteredQuestions.filter((q) => !q.ca_only && !q.pitt_only && !q.hawaii_only);
-  }
-  if (ca) {
-        // This is a temporary fix until we flush out branching better
-        filteredQuestions = filteredQuestions.filter((q) => !q.pitt_only && !q.hawaii_only);
-  }
-  if (pitt) {
-        // This is a temporary fix until we flush out branching better
-        filteredQuestions = filteredQuestions.filter((q) => !q.ca_only && !q.hawaii_only);
-  }
-  if (hawaii) {
-      // This is a temporary fix until we flush out branching better
-      filteredQuestions = filteredQuestions.filter((q) => !q.ca_only && !q.pitt_only);
-  }
-  if (ca_services) {
-    // This is a temporary fix until we flush out branching better
-    filteredQuestions = filteredQuestions.filter((q) => q.ca_services_only);
-  }
 
   const percent = Math.floor((currentIndex / filteredQuestions.length) * 100);
   const setNextPage = (index: number) => {

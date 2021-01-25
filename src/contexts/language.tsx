@@ -78,6 +78,7 @@ function translate<T extends object>(
 ): Translated<T>[];
 function translate<T extends object>(obj: T, language: string): Translated<T>;
 function translate(obj: any, language: string): any {
+  if (obj.length > 80) return obj
   if (Array.isArray(obj)) {
     return obj.map((obj) => translate(obj, language));
   }

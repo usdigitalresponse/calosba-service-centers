@@ -60,7 +60,6 @@ export interface Page {
 
 interface Question {
   name: Copy;
-  name2: Copy;
   instructions?: Copy;
   required?: boolean;
   type: QuestionType;
@@ -84,13 +83,6 @@ interface Option {
 }
 type TranslatedOption = Translated<Option>;
 export type { TranslatedOption as Option}
-
-interface Foo {
-  name: Copy | undefined
-}
- 
-type Test = Translated<Foo>;
-
 
 interface Switch {
   [option: string]: Question[] | null | undefined;

@@ -7,27 +7,52 @@ const Footer: React.FC = () => (
     <div className="container">
       <div className="row">
         <div className="col">
-          <img src="/usdr_logo_dark.png" alt="USDR Logo" />
-          Built by&nbsp;
-          <a href="https://www.usdigitalresponse.org/" target="_blank">
-            United States Digital Response
-          </a>
-          , a non-partisan effort to assist the U.S. government
+          <img src="/osba_logo_light.png" alt="USDR Logo" />
+          Office of the Small Business Advocate (CalOSBA) and The Governor’s Office of Business and Economic Development (GO-Biz)
         </div>
       </div>
       <div className="row">
         <div className="col">
-          <p className="d-inline">
+          <div className="footer-social">
             <img src="/twitter_logo.png" alt="Twitter logo" />
-            <a target="_blank" href="https://twitter.com/USDResponse">
-              @USDResponse
+            <a target="_blank" href="https://twitter.com/CaliforniaOSBA">
+              @CaliforniaOSBA
             </a>
+          </div>
+          <div className="footer-social">
+            <img src="/instagram_logo.jpeg" alt="Instagram logo" />
+            <a target="_blank" href="https://instagram.com/CaliforniaOSBA">
+              @CaliforniaOSBA
+            </a>
+          </div>
+          <div className="footer-social">
+            <img src="/facebook_logo.png" alt="Instagram logo" />
+            <a target="_blank" href="https://facebook.com/CaliforniaOSBA">
+              @CaliforniaOSBA
+            </a>
+          </div>
+          <div className="footer-post-script">
+            This network is funded in part by a grant from the State of California
+          </div>
+        </div>
+        <div className="col">
+          <p className="d-inline">
+            <div>
+          1325 J Street, Suite 1800
+          Sacramento, CA 95814
+          </div>
           </p>
           <p className="d-inline">
-            <a href="mailto:info@usdigitalresponse.org">
-              info@usdigitalresponse.org
-            </a>
+            <div>
+          1-877-345-4633
+            </div>
           </p>
+            <div>
+              Submit an email request at <a target="_blank" href="https://business.ca.gov/zendesk">
+              business.ca.gov/zendesk
+              </a>
+          </div>
+
         </div>
       </div>
     </div>

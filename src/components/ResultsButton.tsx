@@ -1,68 +1,137 @@
-//@ts-nocheck
 
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { Button } from "~/components/uswds-components";
 import { useForm, useFormDictionary } from "../contexts/form";
-import rules from "../rules.json";
+import centers_data from "./../data/centers.json";
+import county_nearest_neighbors_data from "./../data/count_nearest_neighbors.json";
 import assert from "assert";
+import {Center} from "./../types";
 
-interface Rule {
-  op: string;
-  qid: string;
-  value: string;
+// interface Rule {
+//   op: string;
+//   qid: string;
+//   value: string;
+// }
+
+// interface ProgramDef {
+//   program: string;
+//   rules: Rule[];
+// }
+
+
+ // Re-parsing JSON for TypeScript: 
+const allCenters = JSON.parse(JSON.stringify(centers_data));
+
+const getNearestCenters = (userSelectedCountyName: string | undefined): Center[] => {
+  if (!userSelectedCountyName) {
+    return [];
+  }
+  
+  const nearestIds = county_nearest_neighbors_data[userSelectedCountyName].slice(0, 5);
+  const nearestCenters: Center[] = [];
+
+  allCenters.forEach((center: Center) => {
+    // adds statewide centers to result set:
+    if (center.hasStatewideService) {
+      nearestCenters.push(center);
+
+    // adds nearest id matches to result set:
+    } else if (nearestIds.includes(center.id)) {
+      nearestCenters.push(center)
+    }
+  })
+  return nearestCenters;
 }
 
-interface ProgramDef {
-  program: string;
-  rules: Rule[];
-}
+const centerIncludesSelection = (centerValues: any, selectedValues: number[]): boolean => {
+  let returnFlag = false;
+  
+  if (!selectedValues) {
+    return false;
+  }
 
-function evalRuleSet(values: Record<string, any>, ruleSet: Rule[]) {
-  return ruleSet.every((rule) => {
-    const { op, qid, value } = rule;
-    const inputValue = values[qid];
-    if (inputValue === undefined) {
-      // answer not filled out yet
+  // if selected is -1, "None of the above"
+  if (selectedValues.includes(-1)) {
+    // if center is not null for this criteria, center is ineligible:
+    if (centerValues.length > 0) {
       return false;
+    } else {
+      return true
+    }
+  }
+
+  // if selected is 0, "Other" -> skip this filter and let all pass
+  if (selectedValues.includes(0)) {
+    return true;
+  }
+
+  selectedValues.forEach(selection => {
+    if (centerValues.includes(selection)) {
+      returnFlag = true;
+    }
+  })
+  return returnFlag;
+}
+
+const getEligibleCenterIds = (nearestCenters: Center[], values): number[] => {
+  const resultCenterIds: number[] = [];
+  if (!nearestCenters) {
+    return [];
+  }
+
+  // filter out ineligible centers
+  nearestCenters.forEach((center: Center) => {
+    const matchesNeeded = 3;
+    let matchesCurrent = 0;
+
+    // filter for language:
+    const selectedLanguagesArray = values.question_languages;
+    if (centerIncludesSelection(center.languages, selectedLanguagesArray)) {
+      matchesCurrent += 1;
     }
 
-    let inputValueAsString;
-    if (inputValue instanceof Date) {
-      inputValueAsString = inputValue.toISOString().slice(0, 10); // Just date, not time
-    } else {
-      inputValueAsString = inputValue.toString();
+    // filter for areas of service: 
+    const selectedAreasOfServiceArray = values.question_areas_of_service;
+    if (centerIncludesSelection(center.areasOfService, selectedAreasOfServiceArray)) {
+      matchesCurrent += 1;
     }
-    if (op === "eq") {
-      return inputValueAsString === value;
-    } else if (op === "le") {
-      return inputValueAsString <= value;
-    } else {
-      assert(false, `unknown op ${op}`);
+
+    // filter for specific communities:
+    const selectedSpecificCommunities = values.question_communities;
+    console.log("Specific com", center.specificCommunities);
+    if (centerIncludesSelection(center.specificCommunities, selectedSpecificCommunities)) {
+      matchesCurrent += 1;
     }
-  });
+
+    // If enough matches are met, add center id to eligible result set.
+    if (matchesCurrent === matchesNeeded) {
+      resultCenterIds.push(center.id)
+    }
+  })
+  return resultCenterIds;
 }
 
 const ResultsButton: React.FC<{}> = (props) => {
   const { values } = useForm();
   const [results] = useFormDictionary("results");
 
-  // TODO: this should use the validation logic that the questions does
-  const typedRules = rules as ProgramDef[];
+  const userSelectedCountyName: any = values.question_county;
 
-  const programSuccess = [];
-  for (const progDef of typedRules) {
-    if (evalRuleSet(values, progDef.rules)) {
-      programSuccess.push(progDef.program);
-    }
-  }
+  console.log("user sel county name", values.question_county);
 
-  const href =
-    "/results?" + programSuccess.map((pid) => "eligible=" + pid).join("&");
-
+  // Get nearest centers to selected county + add statewide centers
+  const nearestCenters: Center[] = getNearestCenters(userSelectedCountyName);
+    
+  // Get list of eligible center ids
+  const finalEligibleCenterIds: number[] = getEligibleCenterIds(nearestCenters, values) || [];
+  const href = "/results?" + finalEligibleCenterIds.map((centerId) => "eligible=" + centerId).join("&")
+  
   return (
     <Link to={href}>
-      <Button size="large">{results}</Button>
+      <Button 
+        size="large"
+      >{results}</Button>
     </Link>
   );
 };

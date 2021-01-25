@@ -1,68 +1,66 @@
-// @ts-nocheck
-
 import React, { useEffect , useState} from "react";
-import { useLocation, useHistory } from "react-router-dom";
-import PPPSection from './PayrollProtectionProgramSection'
-import EIDLProgramSection from './EconomicInjuryDisasterLoanProgramSection'
-import StatePrograms from './StatePrograms'
+import * as L from 'leaflet';
+import { useLocation } from "react-router-dom";
+import ResultsList from './ResultsList'
 import Header from "./Header";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 import Tabsbar from "./Tabsbar";
 import { Helmet } from "react-helmet";
 import { useFormDictionary, useForm } from "~/contexts/form";
+import centers_data from "./../data/centers.json";
+import {Center} from "./../types";
 
 import "./results.scss";
 import "./index.scss";
 
-const allCenters = [
-  'ca_services_la_verne',
-  'ca_services_el_camino_college',
-  'ca_services_san_diego_orange_and_imperial',
-  'ca_services_la_regional_small_biz_development_center'
-]
+ // For typescript:
+ const allCenters = JSON.parse(JSON.stringify(centers_data));
 
 const Results: React.FC = () => {
   const { search } = useLocation();
-  const history = useHistory();
-  const [back, next, complete] = useFormDictionary("back", "next", "complete");
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [eligibleCenters, setEligibleCenters] = useState<Center[]>([])
 
-  const updateDimensions = () => {
-    let windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
-    setWindowWidth(windowWidth);
+  const handleMarkerClick = (centerId: number): void => {
+    window.location.replace(`#${centerId}`)
   }
 
-  const renderLeafletMap = () => {
-    var map = L.map('mapid').setView([36.7, -119], 7);
+  const renderLeafletMap = (eligibleCenters: Center[] = []): void => {
+    if (!eligibleCenters.length) {
+      return;
+    }
+    const latLngs = eligibleCenters.map(center => L.latLng(center.latitude, center.longitude));
+    const bounds = L.latLngBounds(latLngs);
+    const map = L.map('mapid').fitBounds(bounds, {padding: [20, 20]});
 
-    L.marker([36.7, -119]).addTo(map)
-    L.marker([36.3, -119.2]).addTo(map)
-    L.marker([37.5, -119.2]).addTo(map)
-    L.marker([37, -118.9]).addTo(map)
-
+    // render map tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+
+    // render marker for each center
+    eligibleCenters.forEach(center => {
+      let latLongTuple = new L.LatLng(center.latitude, center.longitude);
+      L.marker(latLongTuple).bindTooltip(center.name, {permanent: false, className: "my-label", offset: [0, 0] }).addTo(map).on('click', () => {handleMarkerClick(center.id)});
+    })
   }
 
-  useEffect(() => {
-    updateDimensions();
-    window.addEventListener("resize", updateDimensions);
-    renderLeafletMap();
+  useEffect(() => {    
+    // get result ids from query params:
+    const idsFromQuery: number[] = new URLSearchParams(search).getAll("eligible").map(string => parseInt(string));
+    if (idsFromQuery.length) {
+      let eligibleCenters: Center[] = [];
+      allCenters.forEach(((center: Center) => {
+        if (idsFromQuery.includes(center.id)) {
+          eligibleCenters.push(center);
+        }
+      }));
+      setEligibleCenters(eligibleCenters);
+      renderLeafletMap(eligibleCenters);
+    }
   }, []);
 
-  const {
-    form: { results },
-  } = useForm();
-
-  const useDevData = true;
-
-  // hacky port of raw js from previous results page, will redo with the new results page
-  const eligibleProgramIds = useDevData ? allCenters :new URLSearchParams(search).getAll("eligible")
-  const filteredCenters = results.filter(center => (eligibleProgramIds.includes(center.id) && allCenters.includes(center.id)))
-  
   return (
     <div className="content-page">
     <Helmet>
@@ -71,7 +69,7 @@ const Results: React.FC = () => {
         property="og:description"
         content="Learn about support programs available to help stabilize your business."
       />
-      <title>COVID-19 SMB Loan Information</title>
+      <title>CalOSBA Technical Assistance Centers</title>
       <meta
         name="Description"
         content="Learn about support programs available to help stabilize your business."
@@ -83,24 +81,24 @@ const Results: React.FC = () => {
         <div className="row">
           <div className="col-md-8 left">
             <h1 className="title-top">
-              {results.find(result => result.id === "page-title").recommendations}
+              Your Recommendations
             </h1>
             <p>
-              {results.find(result => result.id === "instructions").relationship}
+            Please contact a technical assistance center(s) to be matched with an advisor for no-cost one-on-one consulting or register for low-cost training.
             </p>
             <div className="tabsbar-container">
               <Tabsbar
-                  eligiblePrograms={filteredCenters}
+                  eligibleCenters={eligibleCenters}
                 />
             </div>
             <div id="mapid"></div>
-            <StatePrograms
-              eligibleStatePrograms={filteredCenters}
+            <ResultsList
+              eligibleCenters={eligibleCenters}
             />
           </div>
           <div className="col-md-4">
             <Sidebar
-              eligiblePrograms={filteredCenters}
+              eligibleCenters={eligibleCenters}
             />
           </div>
         </div>

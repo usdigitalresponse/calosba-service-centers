@@ -1,0 +1,377 @@
+{
+  "seal": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Seal_of_California.svg",
+  "variables": {},
+  "instructions": {
+    "get-started": {
+      "en": "Get Started",
+      "es": "Empezar",
+      "zh": "开始使用"
+    },
+    "next": {
+      "en": "Next",
+      "es": "Próximo",
+      "zh": "下一个"
+    },
+    "yes": {
+      "en": "Yes",
+      "es": "si",
+      "zh": "是"
+    },
+    "no": {
+      "en": "No",
+      "es": "No",
+      "zh": "没有"
+    },
+    "introduction": {
+      "en": "Introduction",
+      "es": "Introducción",
+      "zh": "介绍"
+    },
+    "submit": {
+      "en": "Review & Submit",
+      "es": "Revisar y enviar",
+      "zh": "审查并提交"
+    },
+    "back": {
+      "en": "Back",
+      "es": "Regresa",
+      "zh": "回去"
+    },
+    "language": {
+      "en": "Language",
+      "es": "Idioma",
+      "zh": "语言"
+    },
+    "progress": {
+      "en": "Progress",
+      "es": "Progreso",
+      "zh": "进展"
+    },
+    "complete": {
+      "en": "Complete",
+      "es": "Completar",
+      "zh": "完成"
+    },
+    "results": {
+      "en": "Results",
+      "es": "Resultados",
+      "zh": "结果"
+    },
+    "apply-now": {
+      "en": "Apply Now",
+      "es": "Solicite ya",
+      "zh": "立即申請"
+    }
+  },
+
+  "questions": [
+    {
+      "id": "question_languages",
+      "name": {
+        "en": "What languages do you prefer?"
+      },
+      "type": "multiselect",
+      "options": [
+        {
+          "id": "Spanish",
+          "name": {
+            "en": "Spanish"
+          }
+        },
+        {
+          "id": "Hmong",
+          "name": {
+            "en": "Hmong"
+          }
+        },
+        {
+          "id": "English",
+          "name": {
+            "en": "English"
+          }
+        },
+        {
+          "id": "Punjabi",
+          "name": {
+            "en": "Punjabi"
+          }
+        },
+        {
+          "id": "Mandarin",
+          "name": {
+            "en": "Mandarin"
+          }
+        },
+        {
+          "id": "Vietnamese",
+          "name": {
+            "en": "Vietnamese"
+          }
+        },
+        {
+          "id": "Hindi",
+          "name": {
+            "en": "Hindi"
+          }
+        },
+        {
+          "id": "Urdu",
+          "name": {
+            "en": "Urdu"
+          }
+        },
+        {
+          "id": "American Sign",
+          "name": {
+            "en": "American Sign"
+          }
+        },
+        {
+          "id": "Cantonese",
+          "name": {
+            "en": "Cantonese"
+          }
+        },
+        {
+          "id": "Tagalog",
+          "name": {
+            "en": "Tagalog"
+          }
+        },
+        {
+          "id": "Korean",
+          "name": {
+            "en": "Korean"
+          }
+        },
+        {
+          "id": "Japanese",
+          "name": {
+            "en": "Japanese"
+          }
+        },
+        {
+          "id": "Taiwanese",
+          "name": {
+            "en": "Taiwanese"
+          }
+        },
+        {
+          "id": "Farsi",
+          "name": {
+            "en": "Farsi"
+          }
+        },
+        {
+          "id": "Russian",
+          "name": {
+            "en": "Russian"
+          }
+        },
+        {
+          "id": "Portuguese",
+          "name": {
+            "en": "Portuguese"
+          }
+        },
+        {
+          "id": "Arabic",
+          "name": {
+            "en": "Arabic"
+          }
+        },
+        {
+          "id": "Armenian",
+          "name": {
+            "en": "Armenian"
+          }
+        },
+        {
+          "id": "Greek",
+          "name": {
+            "en": "Greek"
+          }
+        },
+        {
+          "id": "Pahari",
+          "name": {
+            "en": "Pahari"
+          }
+        },
+        {
+          "id": "Gujarati",
+          "name": {
+            "en": "Gujarati"
+          }
+        },
+        {
+          "id": "French",
+          "name": {
+            "en": "French"
+          }
+        },
+        {
+          "id": "Congo",
+          "name": {
+            "en": "Congo"
+          }
+        },
+        {
+          "id": "Khmer",
+          "name": {
+            "en": "Khmer"
+          }
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "question_county",
+      "name": {
+        "en": "Please enter your county:"
+      },
+      "type": "dropdown",
+      "options": [{"name":"Alpine"},{"name":"Alameda"},{"name":"Amador"},{"name":"Butte"},{"name":"Calaveras"},{"name":"Colusa"},{"name":"Contra Costa"},{"name":"Del Norte"},{"name":"El Dorado"},{"name":"Fresno"},{"name":"Glenn"},{"name":"Humboldt"},{"name":"Imperial"},{"name":"Inyo"},{"name":"Kern"},{"name":"Kings"},{"name":"Lake"},{"name":"Lassen"},{"name":"Los Angeles"},{"name":"Madera"},{"name":"Marin"},{"name":"Mariposa"},{"name":"Mendocino"},{"name":"Merced"},{"name":"Modoc"},{"name":"Mono"},{"name":"Monterey"},{"name":"Napa"},{"name":"Nevada"},{"name":"Orange"},{"name":"Placer"},{"name":"Plumas"},{"name":"Riverside"},{"name":"Sacramento"},{"name":"San Benito"},{"name":"San Bernardino"},{"name":"San Diego"},{"name":"San Francisco"},{"name":"San Joaquin"},{"name":"San Luis Obispo"},{"name":"San Mateo"},{"name":"Santa Barbara"},{"name":"Santa Clara"},{"name":"Santa Cruz"},{"name":"Shasta"},{"name":"Sierra"},{"name":"Siskiyou"},{"name":"Solano"},{"name":"Sonoma"},{"name":"Stanislaus"},{"name":"Sutter"},{"name":"Tehama"},{"name":"Trinity"},{"name":"Tulare"},{"name":"Tuolumne"},{"name":"Ventura"},{"name":"Yolo"},{"name":"Yuba"}],
+      "required": true
+    },
+    {
+      "id": "question_communities",
+      "name": {
+        "en": "Click all that apply"
+      },
+      "type": "multiselect",
+      "options": [
+        {
+          "id": 4,
+          "name": {
+            "en": "Minority / Person of Color"
+          }
+        },
+        {
+          "id": 1,
+          "name": {
+            "en": "Native American"
+          }
+        },
+        {
+          "id": 3,
+          "name": {
+            "en": "Manufacturing"
+          }
+        },
+        {
+          "id": 2,
+          "name": {
+            "en": "Woman"
+          }
+        },
+        {
+          "id": 5,
+          "name": {
+            "en": "Veteran"
+          }
+        },
+        {
+          "id": -1,
+          "name": {
+            "en": "None of the above"
+          }
+        }
+      ],
+      "required": true
+    },
+    {
+      "id": "question_areas_of_service",
+      "name": {
+        "en": "Click all areas of interest"
+      },
+      "type": "multiselect",
+      "options": [
+        {
+          "id": 1,
+          "name": {
+            "en": "1-1 Consulting / Training Offerings"
+          }
+        },
+        {
+          "id": 2,
+          "name": {
+            "en": "Trainings or Webinars"
+          }
+        },
+        {
+          "id": 3,
+          "name": {
+            "en": "Fundraising (i.e. loans, investments, or grants)"
+          }
+        },
+        {
+          "id": 4,
+          "name": {
+            "en": "Disaster Assistance"
+          }
+        },
+        {
+          "id": 5,
+          "name": {
+            "en": "Financial Management"
+          }
+        },
+        {
+          "id": 6,
+          "name": {
+            "en": "Government Procurement / Contracting"
+          }
+        },
+        {
+          "id": 7,
+          "name": {
+            "en": "Employer / Workforce Issues"
+          }
+        },
+        {
+          "id": 8,
+          "name": {
+            "en": "E-Commerce / Digital Strategies"
+          }
+        },
+        {
+          "id": 9,
+          "name": {
+            "en": "Innovative Startups / Science & Tech Based Startups"
+          }
+        },{
+          "id": 10,
+          "name": {
+            "en": "International Trade / Exports"
+          }
+        },
+        {
+          "id": 11,
+          "name": {
+            "en": "Manufacturing"
+          }
+        },
+        {
+          "id": 12,
+          "name": {
+            "en": "Marketing"
+          }
+        },
+        {
+          "id": 13,
+          "name": {
+            "en": "Operations"
+          }
+        },
+        {
+          "id": 0,
+          "name": {
+            "en": "Other"
+          }
+        }
+      ],
+      "required": true
+    }
+  ]
+}

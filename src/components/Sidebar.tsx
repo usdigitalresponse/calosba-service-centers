@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React, { useEffect , useState} from "react";
 
-const Sidebar: React.FC = (props) => {
+const Sidebar: React.FC<sidebarProps> = ({eligibleCenters}) => {
 
 return (
   <nav className="sidebar-container">
@@ -10,12 +10,16 @@ return (
         INDEX
       </div>
       <div>
-        {props.eligiblePrograms.map(program => 
-          <div className="sidebar-item"><a href={`#${program.id}`}>{program.name}</a></div>
+        {eligibleCenters.map(center => 
+          <div className="sidebar-item"><a href={`#${center.id}`}>{center.name}</a></div>
         )}
       </div>
     </div>
   </nav>
 )}
+
+type sidebarProps = {
+  eligibleCenters: Center[]
+}
 
 export default Sidebar;

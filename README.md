@@ -2,23 +2,23 @@
 
 Survey to help find eligible CalOSBA service centers.
 
-# Docs v2
-
-This describes the new React-based form interface.
-
 ## Development
 
 On the first run:
 
-  $ yarn install
+  $ yarn install 
 
-And then to test the form interface:
+Build the app:
+
+  $ yarn build
+
+Start a dev server on localhost:3000:
 
   $ yarn start
 
-This will open a browser window with just the form.
+## Development
 
-The contents of the form itself are defined in src/form.json
+Data is json
 
 ## Headers
 

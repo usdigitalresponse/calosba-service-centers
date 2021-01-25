@@ -3,7 +3,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Menu, Box } from "grommet";
+import { Menu} from "grommet";
 import { useSelectLanguage } from "~/contexts/language";
 
 import "./header.scss";
@@ -20,11 +20,12 @@ interface Props {
 
 const Header: React.FC<Props> = ({ links = [], showLanguageSelect }) => {
   const [language, setLanguage, languageOpts] = useSelectLanguage();
+  showLanguageSelect = false;
   return (
     <div className="container">
       <nav className="navbar">
         <Link className="navbar-brand" to="/">
-          <img src="/usdr_logo_black.svg" alt="USDR Logo" />
+          <img src="/osba_logo_light.png" alt="OSBA Logo" />
         </Link>
         {showLanguageSelect && (
           <div>
