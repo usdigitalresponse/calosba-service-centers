@@ -1,10 +1,8 @@
-//@ts-nocheck
 
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import { Button } from "~/components/uswds-components";
 import { useForm, useFormDictionary } from "../contexts/form";
-import rules from "../data/rules.json";
 import centers_data from "./../data/centers.json";
 import county_nearest_neighbors_data from "./../data/count_nearest_neighbors.json";
 import assert from "assert";
@@ -21,7 +19,11 @@ import {Center} from "./../types";
 //   rules: Rule[];
 // }
 
-const getNearestCenters = (userSelectedCountyName: string): Center[] => {
+
+ // Re-parsing JSON for TypeScript: 
+const allCenters = JSON.parse(JSON.stringify(centers_data));
+
+const getNearestCenters = (userSelectedCountyName: string | undefined): Center[] => {
   if (!userSelectedCountyName) {
     return [];
   }
@@ -29,7 +31,7 @@ const getNearestCenters = (userSelectedCountyName: string): Center[] => {
   const nearestIds = county_nearest_neighbors_data[userSelectedCountyName].slice(0, 5);
   const nearestCenters: Center[] = [];
 
-  centers_data.forEach(center => {
+  allCenters.forEach((center: Center) => {
     // adds statewide centers to result set:
     if (center.hasStatewideService) {
       nearestCenters.push(center);
@@ -42,7 +44,7 @@ const getNearestCenters = (userSelectedCountyName: string): Center[] => {
   return nearestCenters;
 }
 
-const centerIncludesSelection = (centerValues: [], selectedValues: []): boolean => {
+const centerIncludesSelection = (centerValues: any, selectedValues: number[]): boolean => {
   let returnFlag = false;
   
   if (!selectedValues) {
@@ -73,7 +75,7 @@ const centerIncludesSelection = (centerValues: [], selectedValues: []): boolean 
 }
 
 const getEligibleCenterIds = (nearestCenters: Center[], values): number[] => {
-  const resultCenterIds = [];
+  const resultCenterIds: number[] = [];
   if (!nearestCenters) {
     return [];
   }
@@ -97,6 +99,7 @@ const getEligibleCenterIds = (nearestCenters: Center[], values): number[] => {
 
     // filter for specific communities:
     const selectedSpecificCommunities = values.question_communities;
+    console.log("Specific com", center.specificCommunities);
     if (centerIncludesSelection(center.specificCommunities, selectedSpecificCommunities)) {
       matchesCurrent += 1;
     }
@@ -113,10 +116,12 @@ const ResultsButton: React.FC<{}> = (props) => {
   const { values } = useForm();
   const [results] = useFormDictionary("results");
 
-  const userSelectedCountyName: string = values?.question_county;
+  const userSelectedCountyName: any = values.question_county;
+
+  console.log("user sel county name", values.question_county);
 
   // Get nearest centers to selected county + add statewide centers
-  const nearestCenters: Center[] = getNearestCenters(userSelectedCountyName) || [];
+  const nearestCenters: Center[] = getNearestCenters(userSelectedCountyName);
     
   // Get list of eligible center ids
   const finalEligibleCenterIds: number[] = getEligibleCenterIds(nearestCenters, values) || [];

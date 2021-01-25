@@ -14,11 +14,13 @@ import {Center} from "./../types";
 import "./results.scss";
 import "./index.scss";
 
+ // For typescript:
+ const allCenters = JSON.parse(JSON.stringify(centers_data));
+
 const Results: React.FC = () => {
   const { search } = useLocation();
   const [eligibleCenters, setEligibleCenters] = useState<Center[]>([])
-  const allCenters = JSON.parse(JSON.stringify(centers_data));
- 
+
   const handleMarkerClick = (centerId: number): void => {
     window.location.replace(`#${centerId}`)
   }

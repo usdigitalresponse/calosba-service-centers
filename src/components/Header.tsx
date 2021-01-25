@@ -3,7 +3,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Menu, Box } from "grommet";
+import { Menu} from "grommet";
 import { useSelectLanguage } from "~/contexts/language";
 
 import "./header.scss";
