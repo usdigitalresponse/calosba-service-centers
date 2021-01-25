@@ -21,6 +21,7 @@ import "./index.scss";
 const Results: React.FC = () => {
   const { search } = useLocation();
   const [eligibleCenters, setEligibleCenters] = useState<Center[]>([])
+  const [showMap, setShowMap] = useState(true);
 
   const handleMarkerClick = (centerId: number): void => {
     window.location.replace(`#${centerId}`)
@@ -59,6 +60,9 @@ const Results: React.FC = () => {
       }));
       setEligibleCenters(eligibleCenters);
       renderLeafletMap(eligibleCenters);
+      if (eligibleCenters.length === 0) {
+        setShowMap(false)
+      }
     }
   }, []);
 
@@ -85,9 +89,9 @@ const Results: React.FC = () => {
               Your Recommendations
             </h1>
             <p>
-              Please contact a technical assistance center(s) to be matched with an advisor for no-cost one-on-one consulting or register for low-cost training. Learn more on our <a href={'#glossary'}>glossary</a>.
+              Please contact a technical assistance center(s) to be matched with an advisor for no-cost one-on-one consulting or register for low-cost training. To learn more about our centers, go to our <a href={'#glossary'}>glossary</a>.
             </p>
-            <div id="mapid"></div>
+            {showMap && <div id="mapid"></div>}
             {eligibleCenters.length > 0 ? 
               <>
                 <div className="tabsbar-container">
