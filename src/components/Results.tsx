@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet";
 import { useFormDictionary, useForm } from "~/contexts/form";
 import centers_data from "./../data/centers.json";
 import {Center} from "./../types";
+import { Accordion, AccordionPanel, Box } from 'grommet';
 
 import "./results.scss";
 import "./index.scss";
@@ -84,22 +85,66 @@ const Results: React.FC = () => {
               Your Recommendations
             </h1>
             <p>
-            Please contact a technical assistance center(s) to be matched with an advisor for no-cost one-on-one consulting or register for low-cost training.
+              Please contact a technical assistance center(s) to be matched with an advisor for no-cost one-on-one consulting or register for low-cost training. Learn more on our <a href={'#glossary'}>glossary</a>.
             </p>
-            <div className="tabsbar-container">
-              <Tabsbar
+            <div id="mapid"></div>
+            {eligibleCenters.length > 0 ? 
+              <>
+                <div className="tabsbar-container">
+                  <Tabsbar
+                      eligibleCenters={eligibleCenters}
+                    />
+                </div>
+                <ResultsList
                   eligibleCenters={eligibleCenters}
                 />
-            </div>
-            <div id="mapid"></div>
-            <ResultsList
-              eligibleCenters={eligibleCenters}
-            />
+              </> : (
+              <p className="no-matches-paragraph">No centers found that match your criteria. Please try again.</p>
+            )}
           </div>
-          <div className="col-md-4">
+          {eligibleCenters.length > 0 && <div className="col-md-4">
             <Sidebar
               eligibleCenters={eligibleCenters}
             />
+          </div>}
+          <div className="accordion-container">
+            <a id={"glossary"}></a>
+            <h2>Glossary of Terms:</h2>
+            <Accordion
+              multiple={true}
+              margin="medium"
+            >
+              <AccordionPanel label="MBDA Business Center">
+                <Box pad="medium" background="light-2">
+                  <p>Minority-owned firms seeking to penetrate new markets — domestic & global — and growing in size and scale, can access business experts at a MBDA Business Center. Whether it’s securing capital, competing for a contract, identifying a strategic partner or becoming export-ready, your success is our priority. The Centers are in areas with the largest concentration of minority populations and the largest number of minority businesses.</p>
+                </Box>
+              </AccordionPanel>
+              <AccordionPanel label="PTAC">
+                <Box pad="medium" background="light-2">
+                  <p>PTACs provide a wide range of government contracting help — most free of charge! All PTACs are staffed with counselors experienced in government contracting and provide a wide range of services including classes and seminars, individual counseling and easy access to bid opportunities, contract specifications, procurement histories, and other information necessary to successfully compete for government contracts. Many PTAC counselors have backgrounds in government acquisitions and virtually all receive ongoing training to keep pace with continually evolving acquisitions procedures and policies.</p>
+                </Box>
+              </AccordionPanel>
+              <AccordionPanel label="SBDC">
+                <Box pad="medium" background="light-2">
+                  <p>Small business owners and aspiring entrepreneurs can go to their local SBDCs for FREE face-to-face business consulting and at-cost training on a variety of topics. The mission of America s nationwide network of SBDCs is to help new entrepreneurs realize the dream of business ownership and assist existing businesses to remain competitive in an ever-changing global economy.</p>
+                </Box>
+              </AccordionPanel>
+              <AccordionPanel label="VBOC">
+                <Box pad="medium" background="light-2">
+                  <p>VBOC's mission is to advance the growth and commercial competitiveness of veteran owned small business enterprises through education and services focusing on business development, technology deployment and e-commerce.</p>
+                </Box>
+              </AccordionPanel>
+              <AccordionPanel label="WBC">
+                <Box pad="medium" background="light-2">
+                  <p>WBCs help women succeed in business by providing training, mentoring, business development, and financing opportunities to over 145,000 women entrepreneurs each year. Small business owners and aspiring entrepreneurs can go to their local WBCs for FREE face-to-face business consulting and at-cost training on a variety of topics.</p>
+                </Box>
+              </AccordionPanel>
+              <AccordionPanel label="Other Technical Assistance Centers ">
+                <Box pad="medium" background="light-2">
+                  <p> California is home to a myriad of other technical assistance providers that provide small business technical assistance to small business owners and entrepreneurs. Many of these organizations focus on providing technical assistance to women, people of color, minorities, veterans, low to moderate income communities, and rural communities.</p>
+                </Box>
+              </AccordionPanel>
+            </Accordion>
           </div>
         </div>
       </div>

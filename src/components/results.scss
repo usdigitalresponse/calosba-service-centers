@@ -209,8 +209,18 @@ p {
   color: red;
 }
 
+.no-matches-paragraph {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 #mapid { 
   height: 350px; 
+  margin-bottom: 20px;
+}
+
+.accordion-container {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
