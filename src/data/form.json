@@ -66,7 +66,7 @@
 
   "questions": [
     {
-      "id": "ca_services_languages",
+      "id": "question_languages",
       "name": {
         "en": "What languages do you prefer?"
       },
@@ -223,141 +223,155 @@
           }
         }
       ],
-      "required": true,
-      "ca_services_only": true
+      "required": true
     },
     {
-      "id": "ca_services_county",
+      "id": "question_county",
       "name": {
         "en": "Please enter your county:"
       },
       "type": "dropdown",
       "options": [{"name":"Alpine"},{"name":"Alameda"},{"name":"Amador"},{"name":"Butte"},{"name":"Calaveras"},{"name":"Colusa"},{"name":"Contra Costa"},{"name":"Del Norte"},{"name":"El Dorado"},{"name":"Fresno"},{"name":"Glenn"},{"name":"Humboldt"},{"name":"Imperial"},{"name":"Inyo"},{"name":"Kern"},{"name":"Kings"},{"name":"Lake"},{"name":"Lassen"},{"name":"Los Angeles"},{"name":"Madera"},{"name":"Marin"},{"name":"Mariposa"},{"name":"Mendocino"},{"name":"Merced"},{"name":"Modoc"},{"name":"Mono"},{"name":"Monterey"},{"name":"Napa"},{"name":"Nevada"},{"name":"Orange"},{"name":"Placer"},{"name":"Plumas"},{"name":"Riverside"},{"name":"Sacramento"},{"name":"San Benito"},{"name":"San Bernardino"},{"name":"San Diego"},{"name":"San Francisco"},{"name":"San Joaquin"},{"name":"San Luis Obispo"},{"name":"San Mateo"},{"name":"Santa Barbara"},{"name":"Santa Clara"},{"name":"Santa Cruz"},{"name":"Shasta"},{"name":"Sierra"},{"name":"Siskiyou"},{"name":"Solano"},{"name":"Sonoma"},{"name":"Stanislaus"},{"name":"Sutter"},{"name":"Tehama"},{"name":"Trinity"},{"name":"Tulare"},{"name":"Tuolumne"},{"name":"Ventura"},{"name":"Yolo"},{"name":"Yuba"}],
-      "required": true,
-      "ca_services_only": true
+      "required": true
     },
     {
-      "id": "ca_services_communities",
+      "id": "question_communities",
       "name": {
         "en": "Click all that apply"
       },
       "type": "multiselect",
       "options": [
         {
-          "id": "community_poc",
+          "id": 4,
           "name": {
-            "en": "Minority/Person of Color"
+            "en": "Minority / Person of Color"
           }
         },
         {
-          "id": "community_native_american",
+          "id": 1,
           "name": {
             "en": "Native American"
           }
         },
         {
-          "id": "community_manufacturing",
+          "id": 3,
           "name": {
             "en": "Manufacturing"
           }
         },
         {
-          "id": "community_woman",
+          "id": 2,
           "name": {
             "en": "Woman"
           }
         },
         {
-          "id": "community_veteran",
+          "id": 5,
           "name": {
             "en": "Veteran"
           }
         },
         {
-          "id": "community_none",
+          "id": -1,
           "name": {
             "en": "None of the above"
           }
         }
       ],
-      "required": true,
-      "ca_services_only": true
+      "required": true
     },
     {
-      "id": "ca_services_needs",
+      "id": "question_areas_of_service",
       "name": {
         "en": "Click all areas of interest"
       },
       "type": "multiselect",
       "options": [
         {
-          "id": "needs_consulting",
+          "id": 1,
           "name": {
             "en": "1-1 Consulting / Training Offerings"
           }
         },
         {
-          "id": "needs_financing",
+          "id": 2,
+          "name": {
+            "en": "Trainings or Webinars"
+          }
+        },
+        {
+          "id": 3,
           "name": {
             "en": "Fundraising (i.e. loans, investments, or grants)"
           }
         },
         {
-          "id": "needs_disasters",
+          "id": 4,
           "name": {
             "en": "Disaster Assistance"
           }
         },
         {
-          "id": "needs_ecommerce",
+          "id": 5,
           "name": {
-            "en": "E-Commerce / Digital Strategies"
+            "en": "Financial Management"
           }
         },
         {
-          "id": "needs_government",
+          "id": 6,
           "name": {
             "en": "Government Procurement / Contracting"
           }
         },
         {
-          "id": "needs_innovation",
+          "id": 7,
+          "name": {
+            "en": "Employer / Workforce Issues"
+          }
+        },
+        {
+          "id": 8,
+          "name": {
+            "en": "E-Commerce / Digital Strategies"
+          }
+        },
+        {
+          "id": 9,
           "name": {
             "en": "Innovative Startups / Science & Tech Based Startups"
           }
         },{
-          "id": "needs_international",
+          "id": 10,
           "name": {
             "en": "International Trade / Exports"
           }
         },
         {
-          "id": "needs_manufacturing",
+          "id": 11,
           "name": {
             "en": "Manufacturing"
           }
         },
         {
-          "id": "needs_marketing",
+          "id": 12,
           "name": {
             "en": "Marketing"
           }
         },
         {
-          "id": "needs_operations",
+          "id": 13,
           "name": {
             "en": "Operations"
           }
         },
         {
-          "id": "needs_other",
+          "id": 0,
           "name": {
             "en": "Other"
           }
         }
       ],
-      "required": true,
-      "ca_services_only": true
+      "required": true
     }
   ]
 }

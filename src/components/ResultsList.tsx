@@ -2,6 +2,8 @@
 
 import React, { useEffect } from "react";
 import {Center} from './../types';
+import areas_of_service from '../data/areas_of_service.json';
+import specific_communities from '../data/specific_communities.json';
 
 import "./form-style.scss";
 import "./results.scss";
@@ -27,11 +29,21 @@ const ResultsList: React.FC<resultsListProps> = ({eligibleCenters}) => eligibleC
       <p className="loan-description">
         <strong>Services Offered:</strong> 
         <p className="services-list">
-          {center.areasOfService.map(area => {
-            return <li>{area}</li>
+          {center.areasOfService.map(areaId => {
+            const areaObj = areas_of_service.find(area => area.id === areaId);
+            return <li>{areaObj.name}</li>
           })}
         </p>
       </p>
+      {center.specificCommunities.length > 0 && <p className="loan-description">
+        <strong>Specific Communities:</strong> 
+        <p className="services-list">
+          {center.specificCommunities.map(communityId => {
+            const communityObj = specific_communities.find(community => community.id === communityId);
+            return <li>{communityObj.name}</li>
+          })}
+        </p>
+      </p>}
       <a
         className="usa-button"
         onClick={(e) => {

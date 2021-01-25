@@ -35,7 +35,7 @@ const Landing: React.FC = () => {
           property="og:description"
           content="Learn about support programs available to help stabilize your business."
         />
-        <title>COVID-19 SMB Loan Information</title>
+        <title>CalOSBA Technical Assistance</title>
         <meta
           name="Description"
           content="Learn about support programs available to help stabilize your business."

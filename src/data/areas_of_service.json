@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "1-1 Consulting / Training Offerings"
+  },
+  {
+    "id": 2,
+    "name": "Trainings or Webinars"
+  },
+  {
+    "id": 3,
+    "name": "Fundraising (i.e. loans, investments, or grants)"
+  },
+  {
+    "id": 4,
+    "name": "Disaster Assistance"
+  },
+  {
+    "id": 5,
+    "name": "Financial Management"
+  },
+  {
+    "id": 6,
+    "name": "Government Procurement / Contracting"
+  },
+  {
+    "id": 7,
+    "name": "Employer / Workforce Issues"
+  },
+  {
+    "id": 8,
+    "name": "E-Commerce / Digital Strategies"
+  },
+  {
+    "id": 9,
+    "name": "Innovative Startups / Science & Tech Based Startups"
+  },
+  {
+    "id": 10,
+    "name": "International Trade / Exports"
+  },
+  {
+    "id": 11,
+    "name": "Manufacturing"
+  },
+  {
+    "id": 12,
+    "name": "Marketing"
+  },
+  {
+    "id": 13,
+    "name": "Operations"
+  }
+]
