@@ -1,24 +1,11 @@
 
-import React, {useState} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "~/components/uswds-components";
 import { useForm, useFormDictionary } from "../contexts/form";
 import centers_data from "./../data/centers.json";
 import county_nearest_neighbors_data from "./../data/count_nearest_neighbors.json";
-import assert from "assert";
 import {Center} from "./../types";
-
-// interface Rule {
-//   op: string;
-//   qid: string;
-//   value: string;
-// }
-
-// interface ProgramDef {
-//   program: string;
-//   rules: Rule[];
-// }
-
 
  // Re-parsing JSON for TypeScript: 
 const allCenters = JSON.parse(JSON.stringify(centers_data));
@@ -61,11 +48,12 @@ const centerIncludesSelection = (centerValues: any, selectedValues: number[]): b
     }
   }
 
-  // if selected is 0, "Other" -> skip this filter and let all pass
+  // if selected is 0, "Other" -> center is eligible
   if (selectedValues.includes(0)) {
     return true;
   }
 
+  // if selected value is included in center values -> center is eligible.
   selectedValues.forEach(selection => {
     if (centerValues.includes(selection)) {
       returnFlag = true;
@@ -80,9 +68,10 @@ const getEligibleCenterIds = (nearestCenters: Center[], values): number[] => {
     return [];
   }
 
-  // filter out ineligible centers
+  // loop through each center
   nearestCenters.forEach((center: Center) => {
-    const matchesNeeded = 3;
+    // A center is eligible if it meets criteria for each question on the form (-1 for county question, already accounted):
+    const matchesNeeded = Object.keys(values).length - 1;
     let matchesCurrent = 0;
 
     // filter for language:
@@ -117,8 +106,6 @@ const ResultsButton: React.FC<{}> = (props) => {
   const [results] = useFormDictionary("results");
 
   const userSelectedCountyName: any = values.question_county;
-
-  console.log("user sel county name", values.question_county);
 
   // Get nearest centers to selected county + add statewide centers
   const nearestCenters: Center[] = getNearestCenters(userSelectedCountyName);

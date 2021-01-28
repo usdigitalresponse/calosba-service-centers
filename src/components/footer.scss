@@ -28,8 +28,12 @@ footer {
   }
 
   img {
-    width: 24px;
+    width: 22px;
     margin-right: 0.5rem;
+  }
+
+  img .social {
+    height: 0px;
   }
 
   .row + .row {
@@ -41,11 +45,15 @@ footer {
   }
 
   .footer-social {
-    padding-bottom: 7px
+    padding-bottom: 7px;
   }
 
   .footer-post-script {
     padding-top: 10px;
     margin-bottom: 40px;
+  }
+
+  #osba-logo {
+    width: 100px !important;
   }
 }

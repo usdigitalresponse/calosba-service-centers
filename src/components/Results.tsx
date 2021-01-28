@@ -7,7 +7,6 @@ import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 import Tabsbar from "./Tabsbar";
 import { Helmet } from "react-helmet";
-import { useFormDictionary, useForm } from "~/contexts/form";
 import centers_data from "./../data/centers.json";
 import {Center} from "./../types";
 import { Accordion, AccordionPanel, Box } from 'grommet';
@@ -22,6 +21,9 @@ const Results: React.FC = () => {
   const { search } = useLocation();
   const [eligibleCenters, setEligibleCenters] = useState<Center[]>([])
   const [showMap, setShowMap] = useState(true);
+
+  // get result ids from query params:
+  const idsFromQuery: number[] = new URLSearchParams(search).getAll("eligible").map(string => parseInt(string));
 
   const handleMarkerClick = (centerId: number): void => {
     window.location.replace(`#${centerId}`)
@@ -49,8 +51,6 @@ const Results: React.FC = () => {
   }
 
   useEffect(() => {    
-    // get result ids from query params:
-    const idsFromQuery: number[] = new URLSearchParams(search).getAll("eligible").map(string => parseInt(string));
     if (idsFromQuery.length) {
       let eligibleCenters: Center[] = [];
       allCenters.forEach(((center: Center) => {
@@ -77,7 +77,7 @@ const Results: React.FC = () => {
       <title>CalOSBA Technical Assistance Centers</title>
       <meta
         name="Description"
-        content="Learn about support programs available to help stabilize your business."
+        content="Find CalOSBA support centers to help your business."
       />
     </Helmet>
     <Header showLanguageSelect/>
@@ -88,12 +88,18 @@ const Results: React.FC = () => {
             <h1 className="title-top">
               Your Recommendations
             </h1>
-            <p>
-              Please contact a technical assistance center(s) to be matched with an advisor for no-cost one-on-one consulting or register for low-cost training. To learn more about our centers, go to our <a href={'#glossary'}>glossary</a>.
-            </p>
-            {showMap && <div id="mapid"></div>}
-            {eligibleCenters.length > 0 ? 
+            {idsFromQuery.length > 0 ? 
               <>
+                <p>
+                  Please contact a technical assistance center(s) to be matched with an advisor for no-cost one-on-one consulting or register for low-cost training.
+                </p>
+                <p>
+                  To learn more about our centers, go to our <a href={'#glossary'}>glossary.</a>
+                </p>
+                <p>
+                  <a href={'/'}>Click here</a> to start over. 
+                </p>
+                <div id="mapid"></div>
                 <div className="tabsbar-container">
                   <Tabsbar
                       eligibleCenters={eligibleCenters}
@@ -103,7 +109,14 @@ const Results: React.FC = () => {
                   eligibleCenters={eligibleCenters}
                 />
               </> : (
-              <p className="no-matches-paragraph">No centers found that match your criteria. Please try again.</p>
+                <>
+                  <p className="no-matches-paragraph">Please email the California Office of the Small Business Advocate at <a target="_blank" href="https://business.ca.gov/zendesk">
+              business.ca.gov/zendesk
+              </a> to be connected with a resource.</p>
+                  <p className="no-matches-paragraph">
+                    <a href={'/'}>Click here</a> to start over. 
+                  </p>
+              </>
             )}
           </div>
           {eligibleCenters.length > 0 && <div className="col-md-4">

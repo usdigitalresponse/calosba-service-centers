@@ -12,14 +12,12 @@ const ResultsList: React.FC<resultsListProps> = ({eligibleCenters}) => eligibleC
   return (
     <div id={center.id} className="loan-container">
       <a name={center.id}></a>
-      {/* <label className="top-label">
-        {program.address}
-      </label> */}
       <h2 className="title">
         {center.name}
       </h2>
       <p className="loan-description">
-        <strong>Address: </strong><p>{center.fullAddress}</p>
+        <strong>Address: </strong><div>{center.fullAddress}</div>
+        {center.hasStatewideService && <label className="top-label">This center has statewide service</label>}
       </p>
       <p>
       </p>
@@ -48,7 +46,7 @@ const ResultsList: React.FC<resultsListProps> = ({eligibleCenters}) => eligibleC
         className="usa-button"
         onClick={(e) => {
           e.preventDefault();
-          window.open(`https://${center.website}`, '_blank')
+          window.open(`${center.website}`, '_blank')
           }}
         type="button"
         href="#"

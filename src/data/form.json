@@ -237,7 +237,7 @@
     {
       "id": "question_communities",
       "name": {
-        "en": "Click all that apply"
+        "en": "Click all that apply for special networks developed to serve specific communities:"
       },
       "type": "multiselect",
       "options": [
@@ -283,7 +283,7 @@
     {
       "id": "question_areas_of_service",
       "name": {
-        "en": "Click all areas of interest"
+        "en": "Click all areas of interest:"
       },
       "type": "multiselect",
       "options": [
