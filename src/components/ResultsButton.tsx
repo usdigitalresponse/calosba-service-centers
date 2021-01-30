@@ -16,6 +16,7 @@ const getNearestCenters = (userSelectedCountyName: string | undefined): Center[]
   }
   
   const nearestIds = county_nearest_neighbors_data[userSelectedCountyName].slice(0, 5);
+  console.log(nearestIds)
   const nearestCenters: Center[] = [];
 
   allCenters.forEach((center: Center) => {
@@ -110,8 +111,8 @@ const ResultsButton: React.FC<{}> = (props) => {
   // Get nearest centers to selected county + add statewide centers
   const nearestCenters: Center[] = getNearestCenters(userSelectedCountyName);
     
-  // Get list of eligible center ids
-  const finalEligibleCenterIds: number[] = getEligibleCenterIds(nearestCenters, values) || [];
+  // Get list of eligible center ids - max length 10
+  const finalEligibleCenterIds: number[] = getEligibleCenterIds(nearestCenters, values).slice(0, 10) || [];
   const href = "/results?" + finalEligibleCenterIds.map((centerId) => "eligible=" + centerId).join("&")
   
   return (
