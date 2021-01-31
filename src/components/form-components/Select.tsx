@@ -19,7 +19,7 @@ const Select: React.FC<Props> = (props) => {
   }
 
   const options = question.options!.map((option: Option) => option.name)
-
+  console.log(options)
   return (
     <GrommetSelect
       // TODO: we should translate these a11y titles if we want to use them

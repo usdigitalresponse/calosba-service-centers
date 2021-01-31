@@ -65,6 +65,15 @@ const theme = {
       size: "40px",
     },
   },
+  checkBox: {
+    size: "44px",
+    border: {
+      radius: "8px"
+    },
+    toggle: {
+      background: "blue"
+    }
+  }
 };
 
 function App() {

@@ -86,7 +86,7 @@ const FormApp: React.FC<Props> = (props) => {
                 width={styles.fullWidth ? '500px' : {min: '200px'}}
                 margin={{ top: "medium" , bottom: "medium"}}
               >
-                {/* <Box margin={{ top: "medium" }} width="100%">
+                <Box margin={{ top: "medium" }} width="100%">
                   <Box
                     margin={{ top: "xsmall" }}
                     style={{
@@ -110,7 +110,7 @@ const FormApp: React.FC<Props> = (props) => {
                       {percent}% {complete}
                     </Text>
                   </Box>
-                </Box> */}
+                </Box>
                 <Form question={filteredQuestions[currentIndex]} />
                 {currentIndex + 1 < filteredQuestions.length ? (
                   <Button onClick={onClickNext} size="large">

@@ -1,6 +1,6 @@
 import React  from 'react'
 import { Question } from '~/forms/types'
-import { Box, Text } from 'grommet'
+import { Box, Text, CheckBox } from 'grommet'
 import './single-select.css'
 import { useFormField } from '~/contexts/form'
 
@@ -34,24 +34,25 @@ const Multiselect: React.FC<Props> = (props) => {
   }
 
   return (
-    <Box>
+    <Box as="form">
       {question.options.map(o => {
-        const isSelected = value && value.includes(o.id)
+        const isSelected = value && value.includes(o.id) || false;
         return (
-          <Box onClick={() => onSelectValue(o.id)} style={{ background: isSelected ? "#EBFFFA" : "white" }} align="start" key={o.id} margin={{ bottom: 'xsmall' }} pad='small' className="single-select" direction="row">
-            <Box 
-              style={{ 
-                background: isSelected ? "#008060" : "white", 
-                height: 44, 
-                width: 44, 
-                borderRadius: '50%', 
-                flexShrink: 0,
-                border: 'solid 2px rgba(0,0,0,0.15)',
-                // margin-left: 0
-              }} 
-              margin={{ right: 'small' }} 
-              className="single-select-border" 
-            />
+          <Box 
+            onClick={() => onSelectValue(o.id)} 
+            style={{ background: isSelected ? "#EBFFFA" : "white"}} 
+            key={o.id} 
+            margin={{ bottom: 'xsmall' }} 
+            pad='small' 
+            className="single-select" 
+            direction="row"
+            align="center"
+          >
+            <Box margin={{ right: 'small' }}>
+              <CheckBox
+                checked={isSelected}
+              />
+            </Box>
             <Text>{o.name}</Text>
           </Box>
         )

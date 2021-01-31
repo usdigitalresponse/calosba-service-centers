@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "~/components/uswds-components";
@@ -16,7 +15,6 @@ const getNearestCenters = (userSelectedCountyName: string | undefined): Center[]
   }
   
   const nearestIds = county_nearest_neighbors_data[userSelectedCountyName].slice(0, 5);
-  console.log(nearestIds)
   const nearestCenters: Center[] = [];
 
   allCenters.forEach((center: Center) => {
@@ -89,7 +87,6 @@ const getEligibleCenterIds = (nearestCenters: Center[], values): number[] => {
 
     // filter for specific communities:
     const selectedSpecificCommunities = values.question_communities;
-    console.log("Specific com", center.specificCommunities);
     if (centerIncludesSelection(center.specificCommunities, selectedSpecificCommunities)) {
       matchesCurrent += 1;
     }
