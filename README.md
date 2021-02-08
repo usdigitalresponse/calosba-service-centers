@@ -18,49 +18,7 @@ Start a dev server on localhost:3000:
 
 ## Development
 
-Data is json
-
-## Headers
-
-```javascript
-{
-  "Basic Information": { header: true }
-  ...
-}
-```
-
-## Translations
-
-Update UI options:
-
-```javascript
-var language_defaults = {
-  en: {
-    yes_text: "Yes",
-    no_text: "No",
-    ...
-  }
-};
-```
-
-Add to questions and headers:
-
-```javascript
-{
-  "Section Title": {
-    header: true,
-    es: "Spanish Section Title"
-  },
-  test: {
-    html: "English text",
-    yes_text: "English: yes button",
-    es: {
-      html: "Spanish text",
-      yes_text: "Spanish: yes button"
-    }
-  },
-}
-```
+All site data is json and can be found in the /data directory. 
 
 # Contributing
 We welcome contributions to open source code and documentation
