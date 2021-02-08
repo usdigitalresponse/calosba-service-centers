@@ -21,8 +21,9 @@ const Question: React.FC<Props> = (props) => {
   const text = question.name.replace(/\n/g, "\n<br/>")
 
   return (
-    <Box direction="column" margin={{ bottom: 'small' }}>
+    <Box as="fieldset" direction="column" margin={{ bottom: 'small' }}>
       <Box 
+        as="legend"
         fill={true} 
         margin={{ bottom: 'small' }} 
         style={{height: "auto"}}

@@ -11,7 +11,6 @@ body {
   h1,
   h2,
   h3,
-  h4,
   h5 {
     margin-top: 0px;
   }
@@ -168,6 +167,10 @@ body {
 .landing-list {
   padding-top: 10px;
   padding-left: 20px;
+}
+
+.landing-list-item {
+  padding-top: 5px;
 }
 
 

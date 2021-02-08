@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "~/components/uswds-components";
@@ -16,7 +15,6 @@ const getNearestCenters = (userSelectedCountyName: string | undefined): Center[]
   }
   
   const nearestIds = county_nearest_neighbors_data[userSelectedCountyName].slice(0, 5);
-  console.log(nearestIds)
   const nearestCenters: Center[] = [];
 
   allCenters.forEach((center: Center) => {
@@ -71,7 +69,7 @@ const getEligibleCenterIds = (nearestCenters: Center[], values): number[] => {
 
   // loop through each center
   nearestCenters.forEach((center: Center) => {
-    // A center is eligible if it meets criteria for each question on the form (-1 for county question, already accounted):
+    // A center is eligible if it meets criteria for each question on the form, excluding county question:
     const matchesNeeded = Object.keys(values).length - 1;
     let matchesCurrent = 0;
 
@@ -89,7 +87,6 @@ const getEligibleCenterIds = (nearestCenters: Center[], values): number[] => {
 
     // filter for specific communities:
     const selectedSpecificCommunities = values.question_communities;
-    console.log("Specific com", center.specificCommunities);
     if (centerIncludesSelection(center.specificCommunities, selectedSpecificCommunities)) {
       matchesCurrent += 1;
     }
@@ -108,9 +105,9 @@ const ResultsButton: React.FC<{}> = (props) => {
 
   const userSelectedCountyName: any = values.question_county;
 
-  // Get nearest centers to selected county + add statewide centers
-  const nearestCenters: Center[] = getNearestCenters(userSelectedCountyName);
-    
+  // Get nearest centers to selected county. If no selected, include all centers. 
+  const nearestCenters: Center[] = userSelectedCountyName ? getNearestCenters(userSelectedCountyName) : allCenters;
+
   // Get list of eligible center ids - max length 10
   const finalEligibleCenterIds: number[] = getEligibleCenterIds(nearestCenters, values).slice(0, 10) || [];
   const href = "/results?" + finalEligibleCenterIds.map((centerId) => "eligible=" + centerId).join("&")

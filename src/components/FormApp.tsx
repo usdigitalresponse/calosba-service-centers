@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Box, Text } from "grommet";
 import Form from "./Form";
 import ResultsButton from "./ResultsButton";
-import { Button } from "~/components/uswds-components";
-import { useFormDictionary, useForm } from "~/contexts/form";
+import Button from "./uswds-components/Button";
+import { useFormDictionary, useForm } from "./../contexts/form";
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -11,19 +11,7 @@ import Footer from "./Footer";
 import './formApp.scss'
 import './index.scss';
 
-interface FormValues {
-  [questionId: string]: string;
-}
-
-interface Props {
-  ca?: boolean;
-  ca_services?:boolean
-  pitt?:boolean;
-  hawaii?:boolean;
-}
-
-const FormApp: React.FC<Props> = (props) => {
-  const { ca, ca_services, pitt, hawaii } = props;
+const FormApp: React.FC = (props) => {
   const [back, next, complete] = useFormDictionary("back", "next", "complete");
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [windowWidth, setWindowWidth] = useState(0);
@@ -49,7 +37,6 @@ const FormApp: React.FC<Props> = (props) => {
   
   let filteredQuestions = questions;
 
-  const percent = Math.floor((currentIndex / filteredQuestions.length) * 100);
   const setNextPage = (index: number) => {
     setCurrentIndex(index);
     window.scrollTo(0, 0);
@@ -86,31 +73,6 @@ const FormApp: React.FC<Props> = (props) => {
                 width={styles.fullWidth ? '500px' : {min: '200px'}}
                 margin={{ top: "medium" , bottom: "medium"}}
               >
-                {/* <Box margin={{ top: "medium" }} width="100%">
-                  <Box
-                    margin={{ top: "xsmall" }}
-                    style={{
-                      width: "100%",
-                      height: "8px",
-                      borderRadius: "12px",
-                      background: "#E4E7EB",
-                    }}
-                  >
-                    <Box
-                      style={{
-                        width: `${percent}%`,
-                        height: "100%",
-                        borderRadius: "12px",
-                        background: "#008060",
-                      }}
-                    />
-                  </Box>
-                  <Box>
-                    <Text color="black" weight={300} size="xsmall">
-                      {percent}% {complete}
-                    </Text>
-                  </Box>
-                </Box> */}
                 <Form question={filteredQuestions[currentIndex]} />
                 {currentIndex + 1 < filteredQuestions.length ? (
                   <Button onClick={onClickNext} size="large">
