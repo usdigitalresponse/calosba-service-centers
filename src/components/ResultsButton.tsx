@@ -105,11 +105,9 @@ const ResultsButton: React.FC<{}> = (props) => {
 
   const userSelectedCountyName: any = values.question_county;
 
-  console.log(userSelectedCountyName)
-
   // Get nearest centers to selected county. If no selected, include all centers. 
   const nearestCenters: Center[] = userSelectedCountyName ? getNearestCenters(userSelectedCountyName) : allCenters;
-  console.log(nearestCenters)
+
   // Get list of eligible center ids - max length 10
   const finalEligibleCenterIds: number[] = getEligibleCenterIds(nearestCenters, values).slice(0, 10) || [];
   const href = "/results?" + finalEligibleCenterIds.map((centerId) => "eligible=" + centerId).join("&")
