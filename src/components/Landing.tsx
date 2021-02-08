@@ -55,12 +55,12 @@ const Landing: React.FC = () => {
               <div>
                 <h1>Find technical assistance for your small business</h1>
                 <p className="content-container">
-                  California supports a network of small business technical assistance centers that provide free one-on-one consulting and no-cost or low-cost trainings to:                  
+                  California supports a network of small business technical assistance centers that provide services, including but not limited to, free one-on-one consulting and no-cost or low-cost trainings to:                  
                   <p className="landing-list">
-                    <li>Help businesses get funded</li>
-                    <li>Enter new markets</li>
-                    <li>Strengthen operations</li>
-                    <li>Build resiliency and more.</li>
+                    <li className="landing-list-item">Help businesses get funded</li>
+                    <li className="landing-list-item">Enter new markets</li>
+                    <li className="landing-list-item">Strengthen operations</li>
+                    <li className="landing-list-item">Build resiliency and more.</li>
                   </p>
                   With over 30 languages available, use this tool to find your local center today and tailored services.
                 </p>

@@ -69,7 +69,7 @@ const getEligibleCenterIds = (nearestCenters: Center[], values): number[] => {
 
   // loop through each center
   nearestCenters.forEach((center: Center) => {
-    // A center is eligible if it meets criteria for each question on the form (-1 for county question, already accounted):
+    // A center is eligible if it meets criteria for each question on the form, excluding county question:
     const matchesNeeded = Object.keys(values).length - 1;
     let matchesCurrent = 0;
 
@@ -105,9 +105,11 @@ const ResultsButton: React.FC<{}> = (props) => {
 
   const userSelectedCountyName: any = values.question_county;
 
-  // Get nearest centers to selected county + add statewide centers
-  const nearestCenters: Center[] = getNearestCenters(userSelectedCountyName);
-    
+  console.log(userSelectedCountyName)
+
+  // Get nearest centers to selected county. If no selected, include all centers. 
+  const nearestCenters: Center[] = userSelectedCountyName ? getNearestCenters(userSelectedCountyName) : allCenters;
+  console.log(nearestCenters)
   // Get list of eligible center ids - max length 10
   const finalEligibleCenterIds: number[] = getEligibleCenterIds(nearestCenters, values).slice(0, 10) || [];
   const href = "/results?" + finalEligibleCenterIds.map((centerId) => "eligible=" + centerId).join("&")

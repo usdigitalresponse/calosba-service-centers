@@ -73,6 +73,11 @@ const theme = {
     toggle: {
       background: "blue"
     }
+  },
+  accordion: {
+    heading: {
+      margin: "medium",
+    }
   }
 };
 
@@ -85,7 +90,7 @@ function App() {
           <Switch>
             <Route exact path="/questions">
               <FormProvider>
-                <FormApp ca_services={true}/>
+                <FormApp/>
               </FormProvider>
             </Route>
             <Route exact path="/results">
@@ -96,8 +101,8 @@ function App() {
             <Route exact path="/">
               <Helmet>
                 <link
-                    rel="canonical"
-                    href="https://businessrelief.usdigitalresponse.org"
+                  rel="canonical"
+                  href="https://businessrelief.usdigitalresponse.org"
                 />
               </Helmet>
               <Landing/>
