@@ -109,7 +109,7 @@ const Results: React.FC = () => {
                 <>
                   <p className="no-matches-paragraph">
                     Please email the California Office of the Small Business Advocate by <a target="_blank" href="https://business.ca.gov/zendesk">
-                    using this online for to be connected with a resource.
+                    using this online form to be connected with a resource.
                     </a>
                   </p>
                   <p className="no-matches-paragraph">
