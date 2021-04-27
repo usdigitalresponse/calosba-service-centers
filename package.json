@@ -22,7 +22,7 @@
     "react-scripts": "4.0.0",
     "styled-components": "^5.2.1",
     "uswds": "^2.9.0",
-    "validator": "^13.5.1"
+    "validator": "^13.6.0"
   },
   "scripts": {
     "start": "craco start",
