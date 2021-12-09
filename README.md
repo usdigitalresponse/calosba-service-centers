@@ -1,3 +1,6 @@
+⚠️ **This project is no longer maintained!** ⚠️ OWnership of this project has been handed off to the State of California, and this code is provided for open-source and educational purposes.
+
+
 # CalOSBA Service Centers Finder
 
 Survey to help find eligible CalOSBA service centers.
